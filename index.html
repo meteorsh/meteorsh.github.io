@@ -27,7 +27,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
     
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="WeiSenhui的博客" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -104,17 +105,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>Contact</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
@@ -140,7 +130,7 @@
         <div class="logo-name">WeiSenhui的博客</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            行动是所有成功的根本
             
         </div>
     </div>
@@ -200,17 +190,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			About
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			Contact
 		</a>
           
         </li>
@@ -354,7 +333,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                subtitle
+                Action is the foundational key to all success
                 
             </div>
 
@@ -392,7 +371,7 @@
                 </a>
 
                 
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
+                    <a href="https://github.com/meteorsh" class="waves-effect waves-light btn" target="_blank">
                         <i class="fab fa-github-alt"></i>Github
                     </a>
                 
@@ -523,6 +502,35 @@
                     
 
                     
+                        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+        <div class="title center-align">
+            <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
+        </div>
+     x
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838842"
+                   fixed='false'
+                   autoplay='false'
+                   theme:='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+                        
 
                     
 
@@ -548,13 +556,13 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/02/14/b-zhan-shi-pin-xia-zai-shen-qi-miao-sha-100-de-shi-pin/">
+                    <a href="/b-zhan-shi-pin-xia-zai-shen-qi-miao-sha-100-de-shi-pin/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="B站视频下载神器——秒杀100%的视频">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="B站视频下载神器">
                             
-                            <span class="card-title">B站视频下载神器——秒杀100%的视频</span>
+                            <span class="card-title">B站视频下载神器</span>
                         </div>
                     </a>
 
@@ -589,67 +597,31 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/02/14/leetcode-ti-jie-1339.fen-lie-er-cha-shu-de-zui-da-cheng-ji-di-gui-zi-di-xiang-shang-c/">
+                    <a href="/leetcode-ti-jie-1339.fen-lie-er-cha-shu-de-zui-da-cheng-ji-di-gui-zi-di-xiang-shang-c/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="题解">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="LeetCode 1339.分裂二叉树的最大乘积">
                             
-                            <span class="card-title">题解</span>
+                            <span class="card-title">LeetCode 1339.分裂二叉树的最大乘积</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                [toc]
-题目描述（中等难度）原题链接
+                                题目描述（中等难度）原题链接
 
 算法(递归) $O(n)$
 
 乘积 = 某个节点下所有子节点的和 *（整个树的和 - 某个节点下所有子节点的和）
 后序遍历每个结点，更新最大值
-注意：先用long long存数据，另外在max函数
+注意：先用long long存数据，另外在max函数中不要先取解
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Wilson79
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/02/14/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-13
                             </span>
                             <span class="publish-author">
                                 
@@ -673,31 +645,6 @@
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<div class="">
-     x
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme:='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
@@ -836,6 +783,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
     
     
