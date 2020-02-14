@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-02-14T08:37:33.211Z</updated>
+  <updated>2020-02-14T11:14:51.763Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://weisenhui.top/b-zhan-shi-pin-xia-zai-shen-qi-miao-sha-100-de-shi-pin/"/>
     <id>https://weisenhui.top/b-zhan-shi-pin-xia-zai-shen-qi-miao-sha-100-de-shi-pin/</id>
     <published>2020-02-14T06:33:16.603Z</published>
-    <updated>2020-02-14T08:37:33.211Z</updated>
+    <updated>2020-02-14T11:14:51.763Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,10 @@
     </summary>
     
     
+      <category term="计算机知识" scheme="https://weisenhui.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="软件" scheme="https://weisenhui.top/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   

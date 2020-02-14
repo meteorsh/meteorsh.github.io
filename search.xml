@@ -11,6 +11,18 @@
         <content type="html"><![CDATA[<h1 id="唧唧Down——适合Windows-强烈推荐"><a href="#唧唧Down——适合Windows-强烈推荐" class="headerlink" title="唧唧Down——适合Windows(强烈推荐)"></a>唧唧Down——适合Windows(强烈推荐)</h1><blockquote><p>哔哩哔哩下载神器：唧唧Down<br>官网：<a href="http://client.jijidown.com/" target="_blank" rel="noopener">http://client.jijidown.com/</a></p></blockquote><ul><li>下载完成后，运行软件</li><li>只要把你想下载的b站视频网址复制到该软件就可以下载</li><li>视频清晰度可选1080p，还可以设置是否下载弹幕</li><li>用这款软件再配合potplayer，可以尽情享用b站任何视频</li></ul><p><img src="http://jfile.jijidown.com/Web/client.jijidown.com/img/newlook.png?20171208" alt=""></p><h1 id="Chrome插件——适合Mac-Windows"><a href="#Chrome插件——适合Mac-Windows" class="headerlink" title="Chrome插件——适合Mac/Windows"></a>Chrome插件——适合Mac/Windows</h1><ul><li><p>借助Chrome插件 bilibili哔哩哔哩下载助手<br><img src="https://img-blog.csdnimg.cn/20190930112541271.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p></li><li><p>在谷歌应用商城下载安装后在b站视频右下角打开下载助手，点击合并下载即可<br><img src="https://img-blog.csdnimg.cn/2019093011282092.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p></li></ul><h1 id="神器youtube-dl——适合Mac-Windows"><a href="#神器youtube-dl——适合Mac-Windows" class="headerlink" title="神器youtube-dl——适合Mac/Windows"></a>神器youtube-dl——适合Mac/Windows</h1><p><a href="https://github.com/ytdl-org/youtube-dl" target="_blank" rel="noopener"></a><br>一：mac下安装方法很简单<br>打开终端根目录，输入下面两条命令即可<br><img src="https://img-blog.csdnimg.cn/20190930144426383.png" alt=""><br>二：使用方法</p><ol><li>youtube-dl 网址      //在哪个文件夹用终端，就会把文件下载到这个文件夹</li><li>youtube-dl 网址 -o ‘你要的名字.mp4’</li><li>youtube-dl -F 网址             //查看支持的视频格式</li><li>youtube-dl -f format编号 网址  //下载对应的视频格式, 一般默认是best画质</li></ol><p>说明: 此方法不仅可以下载b站视频也可以下载youtube视频<br><img src="https://img-blog.csdnimg.cn/20190930144743703.png" alt=""></p><p>至于Windows下使用就更简单了，直接在项目地址那下载exe文件就可以使用了<br><img src="https://img-blog.csdnimg.cn/20190930144933247.png" alt=""></p>]]></content>
       
       
+      <categories>
+          
+          <category> 计算机知识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
       
     </entry>
     
