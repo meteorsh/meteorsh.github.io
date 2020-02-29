@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Tags, meteorsh">
-    <meta name="description" content="Tags | meteorsh">
+    <meta name="keywords" content="Category: 计算机知识, meteorsh">
+    <meta name="description" content="Category: 计算机知识 | meteorsh">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Tags | meteorsh</title>
+    <title>Category: 计算机知识 | meteorsh</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -324,49 +324,51 @@
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;Post Tags
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;Post Categories
             </div>
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E8%BD%AF%E4%BB%B6/" title="软件: 1">
+                
+                <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" title="计算机知识: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="软件" style="background-color: #F9EBEA;">软件
+                             chip-active "
+                            style="background-color: #F9EBEA;">计算机知识
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/C/" title="C++: 1">
+                <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="编程语言: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="C++" style="background-color: #F5EEF8;">C++
+                            style="background-color: #F5EEF8;">编程语言
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E9%9A%8F%E7%AC%94/" title="随笔: 1">
+                <a href="/categories/%E9%9A%8F%E7%AC%94/" title="随笔: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="随笔" style="background-color: #D5F5E3;">随笔
+                            style="background-color: #D5F5E3;">随笔
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E5%89%91%E6%8C%87offer/" title="剑指offer: 1">
+                <a href="/categories/%E7%AE%97%E6%B3%95/" title="算法: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="剑指offer" style="background-color: #E8F8F5;">剑指offer
-                        <span class="tag-length">1</span>
+                            style="background-color: #E8F8F5;">算法
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
+                
                 
             </div>
         </div>
@@ -374,31 +376,69 @@
 </div>
 
     
-    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/posts/14813.html">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="mac下sublime或终端编译运行C++的方法">
+                            
+                            <span class="card-title">mac下sublime或终端编译运行C++的方法</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                1.Sublime C++11配置优点：
+支持C++11 auto
+可用scanf函数，freopen函数
+ctrl+b直接运行且不会跳出终端黑框
+运行速度极快
 
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
+缺点：
+不支持bits/stdc++.h头文件
+无法在控制台输入，需从in.
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="post-category">
+                                    计算机知识
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-    $('#tag-wordcloud').jQCloud([{"text":"软件","weight":1,"link":"https://weisenhui.top/tags/软件/"},{"text":"C++","weight":1,"link":"https://weisenhui.top/tags/C/"},{"text":"随笔","weight":1,"link":"https://weisenhui.top/tags/随笔/"},{"text":"剑指offer","weight":1,"link":"https://weisenhui.top/tags/剑指offer/"}], {
-        autoResize: true
-    });
-</script>
-    
-
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E8%BD%AF%E4%BB%B6/">
+                            <span class="chip bg-color">软件</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
