@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="剑指offer | 数组中重复的数字, meteorsh">
-    <meta name="description" content="题目描述原题链接
-在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5">
+    <meta name="keywords" content="Master Theorem, meteorsh">
+    <meta name="description" content="主定理的内容《算法导论》中提到了主定理，用来分析分治方法带来的主定理是解决递归时间复杂度的一种直接方法，适合于以下类型的递推公式$$T(n) = aT(n/b) + O(n^d)  （a &amp;gt;= 1 且 b &amp;gt; 1）$$
+其中$n">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>剑指offer | 数组中重复的数字 | meteorsh</title>
+    <title>Master Theorem | meteorsh</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,12 +306,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">剑指offer | 数组中重复的数字</h1>
+                    <h1 class="description center-align post-title">Master Theorem</h1>
                 </div>
             </div>
         </div>
@@ -428,8 +428,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%89%91%E6%8C%87offer/">
-                                <span class="chip bg-color">剑指offer</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -453,28 +453,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-02-15
+                    2020-02-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-02-29
+                    2020-03-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    675
+                    442
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -485,75 +485,46 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p><a href="https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">原题链接</a></p>
-<p>在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。</p>
-<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><p><strong>(基于交换)</strong> $O(n)$<br>相似题 <a href="https://leetcode-cn.com/problems/first-missing-positive/" target="_blank" rel="noopener">LeetCode 41.第一个缺失的正数</a></p>
+                <h1 id="主定理的内容"><a href="#主定理的内容" class="headerlink" title="主定理的内容"></a>主定理的内容</h1><p>《算法导论》中提到了主定理，用来分析<strong>分治</strong>方法带来的<br><strong>主定理是解决递归时间复杂度的一种直接方法</strong>，<strong>适合于以下类型的递推公式</strong><br>$$T(n) = aT(n/b) + O(n^d)  （a &gt;= 1 且 b &gt; 1）$$</p>
+<p>其中$n$为问题规模，$a$为递推的子问题数量，$n/b$为每个子问题的规模（假设每个子问题的规模基本一样），$O(n^d)$为递推以外进行的计算工作量</p>
+<p>那么问题的<font color=red size=3 face=STHeit>时间复杂度$T(n)$</font>为</p>
 <ul>
-<li>遍历数组，把元素i放到下标为i的位置上，如果下标为i的位置上元素值不是i，那就把当前位置和下标为i的数进行交换，那么i就到了正确的位置，否则就继续往下遍历数组</li>
-<li>再遍历一次数组，如果元素i和它的下标不相等，说明元素i就是重复的元素了，此题我们通过指针返回其中一个重复元素就可以了</li>
+<li>如果$a &lt; b^d$，则$T(n) = O(n^d)$</li>
+<li>如果$a = b^d$，则$T(n) = O(n^dlogn)$</li>
+<li>如果$a &gt; b^d$，则$T(n) = O(n^{log_b^a})$</li>
 </ul>
-<p><strong>核心代码</strong></p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">!=</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token function">swap</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> numbers<span class="token punctuation">[</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>详细解释</strong></p>
-<pre class="line-numbers language-cpp"><code class="language-cpp">  下标：<span class="token number">0</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span>
-  数组：<span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">4</span> <span class="token number">1</span>
-
-遍历数组
-  i <span class="token operator">=</span> <span class="token number">0</span>时
-  nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> 那<span class="token number">2</span>应该到下标为<span class="token number">2</span>的位置，所以和<span class="token number">4</span>交换
-  交换后：<span class="token number">4</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">1</span>
-  继续看换过来后nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span>是否在合适的位置，<span class="token number">4</span>应该到下标为<span class="token number">4</span>的位置，所以和<span class="token number">1</span>交换
-  交换后<span class="token operator">:</span> <span class="token number">1</span> <span class="token number">3</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">4</span>
-  同理我们继续把<span class="token number">1</span>和<span class="token number">3</span>交换
-  交换后<span class="token operator">:</span> <span class="token number">3</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">4</span> <span class="token number">4</span>
-  然后继续把<span class="token number">3</span>和<span class="token number">4</span>交换
-  交换后<span class="token operator">:</span> <span class="token number">4</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span>
-  注意：此时nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span>，已经不需要放到下标为<span class="token number">4</span>的位置了，因为已经有个<span class="token number">4</span>放在那了
-         因此i <span class="token operator">=</span> <span class="token number">0</span>这种情况结束
-
-  i <span class="token operator">=</span> <span class="token number">1</span>时
-  继续上面的过程
-  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>时间复杂度是$O(n)$，空间复杂度是$O(1)$</p>
-<h1 id="C-代码"><a href="#C-代码" class="headerlink" title="C++代码"></a>C++代码</h1><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<hr>
+<p>说明：像$T(n) = T(\sqrt{n}) + 1$这个公式就不符合上面的递归类型，不过它可以通过换元得到上面形式，这里不再赘述</p>
+<h1 id="具体应用"><a href="#具体应用" class="headerlink" title="具体应用"></a>具体应用</h1><p><strong>例：二分查找</strong></p>
+<p>$T(n) = T(n/2) + O(n^0)$  假设每个子问题的规模基本一样</p>
+<p> $a = 1, b = 2, d = 0,b^d = 1$ ，所以 $T(n) = O(logn)$ </p>
+<hr>
+<p><strong>例：归并排序</strong></p>
+<p>$T(n) = 2T(n/2) + O(n^1)$  假设每个子问题的规模基本一样</p>
+<p> $a = 2, b = 2, d = 1,b^d = 2$ ，所以 $T(n) = O(nlogn)$ </p>
+<hr>
+<p><strong>例：LeetCode 236. 二叉树的最近公共祖先</strong></p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token comment" spellcheck="true">// Parameters:</span>
-    <span class="token comment" spellcheck="true">//        numbers:     an array of integers</span>
-    <span class="token comment" spellcheck="true">//        length:      the length of array numbers</span>
-    <span class="token comment" spellcheck="true">//        duplication: (Output) the duplicated number in the array number</span>
-    <span class="token comment" spellcheck="true">// Return value:       true if the input is valid, and there are some duplications in the array number</span>
-    <span class="token comment" spellcheck="true">//                     otherwise false</span>
-    <span class="token keyword">bool</span> <span class="token function">duplicate</span><span class="token punctuation">(</span><span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> length<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">*</span> duplication<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment" spellcheck="true">// Judge if the input is valid</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">></span> length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>  <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+    TreeNode<span class="token operator">*</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> p<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
 
-        <span class="token comment" spellcheck="true">// Make the element in the right position</span>
-        <span class="token comment" spellcheck="true">// Such as element 3 should in index 3</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">while</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">!=</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token function">swap</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> numbers<span class="token punctuation">[</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        TreeNode<span class="token operator">*</span> left <span class="token operator">=</span>  <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>root<span class="token operator">-</span><span class="token operator">></span>left<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        TreeNode<span class="token operator">*</span> right <span class="token operator">=</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>root<span class="token operator">-</span><span class="token operator">></span>right<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        <span class="token comment" spellcheck="true">// return a duplicate number by reference (point)</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token operator">*</span>duplication <span class="token operator">=</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> p <span class="token operator">||</span> root <span class="token operator">==</span> q<span class="token punctuation">)</span> 
+            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>left <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token keyword">return</span> right<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>right <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token keyword">return</span> left<span class="token punctuation">;</span>      
+        <span class="token keyword">if</span><span class="token punctuation">(</span>left <span class="token operator">&amp;&amp;</span> right<span class="token punctuation">)</span> <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span> 
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>其他方法：</p>
-<ul>
-<li>排序：时间复杂度是$O(nlogn)$，空间复杂度是$O(1)$</li>
-<li>创建一个新数组：时间复杂度是$O(n)$，空间复杂度是$O(n)$</li>
-</ul>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>$T(n) = 2T(n/2) + O(n^0)$  假设每个子问题的规模基本一样，也就是说我们可以<font color=red size=3 face=STHeit>假设左右子树的结点数相同</font></p>
+<p> $a = 2, b = 2, d = 0,b^d = 1$ ，所以 $T(n) = O(n)$ </p>
 
             </div>
             <hr/>
@@ -579,7 +550,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weisenhui.top/posts/1010.html">https://weisenhui.top/posts/1010.html</a>
+                    <a href="https://weisenhui.top/posts/11000.html">https://weisenhui.top/posts/11000.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -617,8 +588,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%89%91%E6%8C%87offer/">
-                                    <span class="chip bg-color">剑指offer</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -663,13 +634,69 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/1101.html">
+                <a href="/posts/20236.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MasterTheorem-递归时间复杂度分析">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Transfer video to mp3">
                         
-                        <span class="card-title">MasterTheorem-递归时间复杂度分析</span>
+                        <span class="card-title">Transfer video to mp3</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            前言
+视频文件大小一般都有200-300MB，而有时我只想要这个视频的背景音乐，把视频文件转换为音频文件，这样文件大小就会在10MB以内
+
+使用python可以快速批量的把视频文件转换为音频文件
+具体方法
+安装ffmpy3库
+
+用os模块把
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Current&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/11000.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Master Theorem">
+                        
+                        <span class="card-title">Master Theorem</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -680,9 +707,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -695,6 +722,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -702,49 +730,6 @@
                         <span class="chip bg-color">算法</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/12489.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="通过数据范围反推算法复杂度和算法内容">
-                        
-                        <span class="card-title">通过数据范围反推算法复杂度和算法内容</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            引言
-ACM比赛或者互联网笔试题的时间限制是1秒或2秒。  
-在这种情况下，C++代码中的操作次数控制在$10^7$为最佳。
-
-具体内容下面给出在不同数据范围下，代码的时间复杂度和算法该如何选择：
-
-n ≤ 30 =&gt;指数级别, df
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            meteorsh
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

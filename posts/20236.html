@@ -4,10 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数据结构-时间复杂度和空间复杂度分析, meteorsh">
-    <meta name="description" content="
+    <meta name="keywords" content="Transfer video to mp3, meteorsh">
+    <meta name="description" content="前言
+视频文件大小一般都有200-300MB，而有时我只想要这个视频的背景音乐，把视频文件转换为音频文件，这样文件大小就会在10MB以内
 
-研究时间复杂度的重要性我们知道CPU提升的速度是很慢的，就算夸张点10年间提升了10000倍如果一个可以有时间复杂度为 $O(n)$ 的算法的程序，我们写成了 $O(n^2)$，那么程序只提升了 $\sqrt {10000}=100$倍">
+使用python可以快速批量的把视频文件转换为音频文件
+具体方法
+安装ffmpy3库
+
+用os模块把">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>数据结构-时间复杂度和空间复杂度分析 | meteorsh</title>
+    <title>Transfer video to mp3 | meteorsh</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数据结构-时间复杂度和空间复杂度分析</h1>
+                    <h1 class="description center-align post-title">Transfer video to mp3</h1>
                 </div>
             </div>
         </div>
@@ -427,12 +432,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Python/" class="post-category">
+                                Python
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -441,28 +459,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-02
+                    2020-03-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-02
+                    2020-03-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.4k
+                    403
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    5 Min
+                    1 Min
                 </div>
                 
 
@@ -473,104 +491,64 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div align=center><img src="https://img-blog.csdnimg.cn/20200302184517998.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_cGhvdG8gYnkgc2h3ZWk=,size_25,color_FFFFFF,t_50,g_center" width="30%"/></div>
-
-<h1 id="研究时间复杂度的重要性"><a href="#研究时间复杂度的重要性" class="headerlink" title="研究时间复杂度的重要性"></a>研究时间复杂度的重要性</h1><p>我们知道CPU提升的速度是很慢的，就算夸张点10年间提升了10000倍<br>如果一个可以有时间复杂度为 $O(n)$ 的算法的程序，我们写成了 $O(n^2)$，那么程序只提升了 $\sqrt {10000}=100$倍 ,而对于$O(n)$时间复杂度的算法却能提升10000倍</p>
-<h1 id="最坏情况和平均情况"><a href="#最坏情况和平均情况" class="headerlink" title="最坏情况和平均情况"></a>最坏情况和平均情况</h1><p><strong>示例：</strong><br>在一个由n个元素的数组中，按顺序查找一个数<br>最好的情况是查找的就是第一个数，复杂度 $O(1)$</p>
-<p>平均运行时间需要从概率来看，也就是期望<br>每个数是查找的概率是 $1/n$ ，然后乘以对应的随机变量<br>期望 $E = 1 * 1/n + 2 * 1/n + … + n * 1/n = (1 + n) / 2$<br>所以平均查找次数是$\frac {(1 + n)} { 2}$次</p>
-<p>最坏情况是这个数字在最后一个位置，所以需要查找n次</p>
-<hr>
-<p>平均运行时间是最有意义的，因为这是一个通常的运行时间，比如除了双十一外的364天，淘宝运行时间都是1秒，但是最坏情况是双十一那天，淘宝运行时间可能是100秒</p>
-<p>最坏情况运行时间是一种保证，也就是说运行时间不会再多了，这在实际应用中是一个很重要的需求，所以<font color=red size=3 face=STHeit>一般我们说的时间复杂度都是指最坏情况的运行时间<br></font></p>
-<h1 id="时间复杂度的渐进表示法"><a href="#时间复杂度的渐进表示法" class="headerlink" title="时间复杂度的渐进表示法"></a>时间复杂度的渐进表示法</h1><p>我们把<strong>语句的总的执行次数记作 $T(n)$</strong><br>$T(n)$是关于问题规模n的函数<br><font color=red size=3 face=STHeit> 大O表示法</font></p>
-<ul>
-<li><p>$T(n) = O(f(n))$表示存在常数$C&gt;0,n_0&gt;0$，使得当$n&gt;=n_0$时有 $T(n) &lt;= Cf(n)$ </p>
-<p>对于充分大的$n$而言，$f(n)$是$T(n)$的某种上界<br>但是一个东西的上界可以有很多个，太大的上界对我们分析算法复杂度没有什么参考意义，我们希望跟真实情况越贴近越好</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>视频文件大小一般都有200-300MB，而有时我只想要这个视频的背景音乐，把视频文件转换为音频文件，这样文件大小就会在10MB以内</p>
+</blockquote>
+<p>使用python可以快速批量的把视频文件转换为音频文件</p>
+<h1 id="具体方法"><a href="#具体方法" class="headerlink" title="具体方法"></a>具体方法</h1><ul>
+<li><p>安装ffmpy3库</p>
+</li>
+<li><p>用os模块把视频的文件名读取出来，放在列表中</p>
+</li>
+<li><p>然后把所有视频文件后缀替换为音频的格式</p>
+</li>
+<li><p>当然只改后缀是不行的，因为文件属性并没有更改，我们再用FFmpeg方法对转换后的音频文件赋予它音频的属性</p>
 </li>
 </ul>
-<blockquote>
-<p>推导大O阶：</p>
-<ol>
-<li>用常数取代运行时间中的所有加数常数</li>
-<li>在修改后的运行次数函数中，只保留最高阶项</li>
-<li>如果最高阶项且不是1，则去除与这个项相乘的常数 得到的结果就是大O阶</li>
-</ol>
-</blockquote>
-<p>例1：$T(n) = 4n^{3}$ + $7n^{2}$ + $53logn$ +  $2$<br>推导大O阶得：$T(n) = O(n^3)$ </p>
-<p>例2：$O(3) = O(1)$</p>
-<p>例3： $O(2logn + n/2) = O(n)$ </p>
-<hr>
-<ul>
-<li>$T(n) = \Omega(g(n))$表示存在常数$C&gt;0,n_0&gt;0$，使得当$n&gt;=n_0$时有 $T(n) &gt;= Cg(n)$</li>
-<li>$T(n) = \theta(h(n))$表示同时有 $T(n) = O(h(n))$和 $T(n) = \Omega(h(n))$   </li>
-</ul>
-<h1 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h1><p>常见的时间复杂度所耗时间的大小排名：<br>$$O(1)&lt;O(logn)&lt;O(n)&lt;O(n^2)&lt;O(n^3)&lt;O(2^n)&lt;O(n!)&lt;O(n^n)$$学数学的时候用的记忆技巧：<strong>对幂指阶超</strong></p>
-<h1 id="空间复杂度分析"><a href="#空间复杂度分析" class="headerlink" title="空间复杂度分析"></a>空间复杂度分析</h1><p>算法空间复杂度的计算公式记作： $S(n) = O(f(n))$ ，其中 $n$ 为问题的规模， $f(n)$为语句关于 $n$ 所占存储空间的函数</p>
-<p>一个程序执行时，除了需要存储程序本身的指令、常数、遍历和输入数据外，还要存储对数据操作的存储单元</p>
-<p>如果输入数据所占空间只取决于问题本身，与算法无关，那我们<font color=red size=3 face=STHeit>只需要分析该算法在实现时所需的辅助空间</font>，也就是<font color=red size=3 face=STHeit>分析额外使用的空间</font>即可</p>
-<hr>
-<p><strong>例1：</strong><br>下面的代码输入数据matrix所占空间与算法优劣没有关系，所以我们只需要看额外的使用空间即可</p>
-<p>这里我们定义了变量：$n、m、d、x、y、a、b$，数组：$dx，dy，res$<br>用大O推导法知$S(N) = O(N)$，其中$N$表示矩阵中的所有元素个数$N=n*m$（<font color=red size=3 face=STHeit>需要$res$数组来存储信息</font>）</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token function">findDiagonalOrder</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token operator">&amp;</span> matrix<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>matrix<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token operator">!</span>matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> matrix<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> m <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        vector <span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> res<span class="token punctuation">;</span>
+<h2 id="Python完整代码"><a href="#Python完整代码" class="headerlink" title="Python完整代码"></a>Python完整代码</h2><p>运行下面代码即可实现视频文件转换为音频文件（注意修改文件路径）</p>
+<pre class="line-numbers language-py"><code class="language-py">import os
+from ffmpy3 import FFmpeg
 
-        <span class="token keyword">int</span> dx<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span> dy<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+# filepath：待处理视频的文件路径
+filepath = "/Users/macos/Documents/Wilson79/GitHub/video-to-mp3/video"
+filename = os.listdir(filepath)
 
-        <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> d <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n <span class="token operator">*</span> m<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            res<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            matrix<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">=</span> INT_MAX<span class="token punctuation">;</span>
+print("待处理的视频文件:")
+print(filename)
+print("\n")
 
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> n <span class="token operator">*</span> m<span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token comment" spellcheck="true">// 利用(a,b)找到下一个可以走的点</span>
-            <span class="token keyword">int</span> a <span class="token operator">=</span> x <span class="token operator">+</span> dx<span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token punctuation">,</span> b <span class="token operator">=</span> y <span class="token operator">+</span> dy<span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">while</span><span class="token punctuation">(</span>a <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> a <span class="token operator">>=</span> n <span class="token operator">||</span> b <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> b <span class="token operator">>=</span> m <span class="token operator">||</span> matrix<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span> <span class="token operator">==</span> INT_MAX<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                d <span class="token operator">=</span> <span class="token punctuation">(</span>d <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">4</span><span class="token punctuation">;</span>
-                a <span class="token operator">=</span> x <span class="token operator">+</span> dx<span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token punctuation">,</span> b <span class="token operator">=</span> y <span class="token operator">+</span> dy<span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
+# output_dir：输出音频文件的路径
+output_dir = "/Users/macos/Documents/Wilson79/GitHub/video-to-mp3/music"
 
-            <span class="token comment" spellcheck="true">// 让(x,y)变成下一个可走的点，然后进入下一个循环</span>
-            x <span class="token operator">=</span> x <span class="token operator">+</span> dx<span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            y <span class="token operator">=</span> y <span class="token operator">+</span> dy<span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>d <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> d <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> d <span class="token operator">=</span> <span class="token punctuation">(</span>d <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">4</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+# 读取上次已导出的音频文件名（防止多次运行，出现overwrited的错误）
+exit_filename = os.listdir(output_dir)
+print("已导出的音频文件: ")
+print(exit_filename)
 
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>例2：</strong><br><a href="https://blog.csdn.net/qq_43827595/article/details/104160450" target="_blank" rel="noopener">剑指offer 旋转数组的最小数字（二分）</a></p>
-<p>这里我额外用到的空间是常数阶的，所以空间复杂度是$O(1)$</p>
-<p>虽然这里用到了rotateArray[i]等数组元素，但这是题目给的输入数据，不是自己额外定义的，所以不用算这一部分</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token comment" spellcheck="true">// 二分：二段性质 可能有重复</span>
-     <span class="token comment" spellcheck="true">// 3 4 5 1 2 3</span>
-    <span class="token keyword">int</span> <span class="token function">minNumberInRotateArray</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> rotateArray<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> rotateArray<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+for i in range(len(filename)):
+    # 改文件的后缀名
+    changefile = filepath + "/" + filename[i]
+    change_postfix_name =filename[i].replace('mp4', 'mp3').replace('flv', 'mp3') # 另外的视频格式请自行添加
 
-        <span class="token comment" spellcheck="true">// 去重</span>
-        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> j <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> rotateArray<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> rotateArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> j <span class="token operator">--</span><span class="token punctuation">;</span>
+    outputfile = output_dir + "/" + change_postfix_name
+    if change_postfix_name in exit_filename:
+        continue
+    print(changefile)
+    # 利用FFmpeg进行转换
+    fpg = FFmpeg(inputs={changefile: None},
+                 outputs={outputfile: '-vn -ar 44100 -ac 2 -ab 192 -f mp3'})  # mp3也可以换成wav等格式
+    print(fpg.cmd)
+    fpg.run()
 
-        <span class="token comment" spellcheck="true">// 递增的情况，返回第一个值</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>j <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> rotateArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> rotateArray<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">return</span> rotateArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+print("\n任务完成！！！")<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="运行后的效果"><a href="#运行后的效果" class="headerlink" title="运行后的效果"></a>运行后的效果</h1><p><img src="https://img-blog.csdnimg.cn/20200212160136119.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
+<div align=center>
+<img src="https://img-blog.csdnimg.cn/20200212153448976.png" width="100%" height="70%" />
+</div>
 
-        <span class="token comment" spellcheck="true">// 二分</span>
-        <span class="token keyword">int</span> l <span class="token operator">=</span> i<span class="token punctuation">,</span> r <span class="token operator">=</span> j<span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>l <span class="token operator">&lt;</span> r<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> mid <span class="token operator">=</span> l <span class="token operator">+</span> r <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>rotateArray<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> rotateArray<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> r <span class="token operator">=</span> mid<span class="token punctuation">;</span>
-            <span class="token keyword">else</span> l <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-
-        <span class="token keyword">return</span> rotateArray<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<div align=center>
+<img src="https://img-blog.csdnimg.cn/20200212153510214.png" width="100%" height="70%" />
+</div>
 
             </div>
             <hr/>
@@ -596,7 +574,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weisenhui.top/posts/123.html">https://weisenhui.top/posts/123.html</a>
+                    <a href="https://weisenhui.top/posts/20236.html">https://weisenhui.top/posts/20236.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -633,7 +611,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -680,20 +662,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="NumPy入门教程">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="NumPy Basics">
                         
-                        <span class="card-title">NumPy入门教程</span>
+                        <span class="card-title">NumPy Basics</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-
-Python-for-Data-Analysis.pdf
-4.1 NumPy ndarrayNumPy, short for Numerical Python, is the fundamental package required
+                            The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation ta
                         
                     </div>
                     <div class="publish-info">
@@ -730,13 +707,13 @@ Python-for-Data-Analysis.pdf
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/1101.html">
+                <a href="/posts/11000.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MasterTheorem-递归时间复杂度分析">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Master Theorem">
                         
-                        <span class="card-title">MasterTheorem-递归时间复杂度分析</span>
+                        <span class="card-title">Master Theorem</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -941,13 +918,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
     <footer class="page-footer bg-color">

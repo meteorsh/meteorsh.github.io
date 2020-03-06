@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-03-06T11:14:25.077Z</updated>
+  <updated>2020-03-06T15:55:11.986Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>NumPy入门教程</title>
+    <title>NumPy Basics</title>
     <link href="https://weisenhui.top/posts/123321.html"/>
     <id>https://weisenhui.top/posts/123321.html</id>
     <published>2020-03-06T14:00:00.000Z</published>
-    <updated>2020-03-06T11:14:25.077Z</updated>
+    <updated>2020-03-06T15:55:11.986Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation tasks without the need to write some loops.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://weisenhui.top/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://weisenhui.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Transfer video to mp3</title>
+    <link href="https://weisenhui.top/posts/20236.html"/>
+    <id>https://weisenhui.top/posts/20236.html</id>
+    <published>2020-03-04T14:00:00.000Z</published>
+    <updated>2020-03-06T16:10:16.947Z</updated>
     
     <summary type="html">
     
@@ -29,7 +50,7 @@
       
         
         
-          &lt;div align=center&gt;&lt;img
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
         
       
     
@@ -44,34 +65,11 @@
   </entry>
   
   <entry>
-    <title>数据结构-时间复杂度和空间复杂度分析</title>
-    <link href="https://weisenhui.top/posts/123.html"/>
-    <id>https://weisenhui.top/posts/123.html</id>
-    <published>2020-03-02T10:43:01.000Z</published>
-    <updated>2020-03-02T10:46:05.210Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div align=center&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MasterTheorem-递归时间复杂度分析</title>
-    <link href="https://weisenhui.top/posts/1101.html"/>
-    <id>https://weisenhui.top/posts/1101.html</id>
+    <title>Master Theorem</title>
+    <link href="https://weisenhui.top/posts/11000.html"/>
+    <id>https://weisenhui.top/posts/11000.html</id>
     <published>2020-02-29T08:39:34.000Z</published>
-    <updated>2020-02-29T09:06:44.702Z</updated>
+    <updated>2020-03-06T16:00:03.851Z</updated>
     
     <summary type="html">
     
@@ -90,57 +88,6 @@
     
     
       <category term="算法" scheme="https://weisenhui.top/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>剑指offer | 数组中重复的数字</title>
-    <link href="https://weisenhui.top/posts/1010.html"/>
-    <id>https://weisenhui.top/posts/1010.html</id>
-    <published>2020-02-15T06:18:46.000Z</published>
-    <updated>2020-02-29T08:49:29.415Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://weisenhui.top/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="剑指offer" scheme="https://weisenhui.top/tags/%E5%89%91%E6%8C%87offer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过数据范围反推算法复杂度和算法内容</title>
-    <link href="https://weisenhui.top/posts/12489.html"/>
-    <id>https://weisenhui.top/posts/12489.html</id>
-    <published>2020-02-14T12:18:01.000Z</published>
-    <updated>2020-02-29T08:45:32.241Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;ACM比赛或者互联网笔试题的时间限制是1秒或2秒。 
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
