@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>Python-cheatsheets</title>
+      <link href="/posts/32313.html"/>
+      <url>/posts/32313.html</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.datacamp.com/community/data-science-cheatsheets" target="_blank" rel="noopener">https://www.datacamp.com/community/data-science-cheatsheets</a><br><img src="https://img-blog.csdnimg.cn/2020030818551093.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p><ul><li><a href="https://weisenhui.top/file/DataCamp/Jupyter-Notebook.pdf">Jupyter Notebook</a></li><li><a href="https://weisenhui.top/file/DataCamp/Python-Basics.pdf">Python Basics</a></li><li><a href="https://weisenhui.top/file/DataCamp/NumPy-Basics.pdf">NumPy Basics</a></li><li><a href="https://weisenhui.top/file/DataCamp/Pandas-Basics.pdf">Pandas Basics</a></li><li><a href="https://weisenhui.top/file/DataCamp/Scikit-Learn.pdf">Scikit-Learn</a></li><li><a href="https://weisenhui.top/file/DataCamp/Linear-Algebra.pdf">Linear-Algebra</a></li></ul><p><img src="https://img-blog.csdnimg.cn/20200308185752222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Master Theorem</title>
       <link href="/posts/11000.html"/>
       <url>/posts/11000.html</url>

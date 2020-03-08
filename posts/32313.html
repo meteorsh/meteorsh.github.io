@@ -4,15 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Transfer video to mp3, meteorsh">
-    <meta name="description" content="前言
-视频文件大小一般都有200-300MB，而有时我只想要这个视频的背景音乐，把视频文件转换为音频文件，这样文件大小就会在10MB以内
+    <meta name="keywords" content="Python-cheatsheets, meteorsh">
+    <meta name="description" content="https://www.datacamp.com/community/data-science-cheatsheets
 
-使用python可以快速批量的把视频文件转换为音频文件
-具体方法
-安装ffmpy3库
-
-用os模块把">
+Jupyter Notebook
+Python Basics
+NumPy Basics
+Pandas Basics
+S">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Transfer video to mp3 | meteorsh</title>
+    <title>Python-cheatsheets | meteorsh</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -312,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Transfer video to mp3</h1>
+                    <h1 class="description center-align post-title">Python-cheatsheets</h1>
                 </div>
             </div>
         </div>
@@ -466,14 +465,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-07
+                    2020-03-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    403
+                    20
                 </div>
                 
 
@@ -491,64 +490,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>视频文件大小一般都有200-300MB，而有时我只想要这个视频的背景音乐，把视频文件转换为音频文件，这样文件大小就会在10MB以内</p>
-</blockquote>
-<p>使用python可以快速批量的把视频文件转换为音频文件</p>
-<h1 id="具体方法"><a href="#具体方法" class="headerlink" title="具体方法"></a>具体方法</h1><ul>
-<li><p>安装ffmpy3库</p>
-</li>
-<li><p>用os模块把视频的文件名读取出来，放在列表中</p>
-</li>
-<li><p>然后把所有视频文件后缀替换为音频的格式</p>
-</li>
-<li><p>当然只改后缀是不行的，因为文件属性并没有更改，我们再用FFmpeg方法对转换后的音频文件赋予它音频的属性</p>
-</li>
+                <p><a href="https://www.datacamp.com/community/data-science-cheatsheets" target="_blank" rel="noopener">https://www.datacamp.com/community/data-science-cheatsheets</a><br><img src="https://img-blog.csdnimg.cn/2020030818551093.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
+<ul>
+<li><a href="https://weisenhui.top/file/DataCamp/Jupyter-Notebook.pdf">Jupyter Notebook</a></li>
+<li><a href="https://weisenhui.top/file/DataCamp/Python-Basics.pdf">Python Basics</a></li>
+<li><a href="https://weisenhui.top/file/DataCamp/NumPy-Basics.pdf">NumPy Basics</a></li>
+<li><a href="https://weisenhui.top/file/DataCamp/Pandas-Basics.pdf">Pandas Basics</a></li>
+<li><a href="https://weisenhui.top/file/DataCamp/Scikit-Learn.pdf">Scikit-Learn</a></li>
+<li><a href="https://weisenhui.top/file/DataCamp/Linear-Algebra.pdf">Linear-Algebra</a></li>
 </ul>
-<h2 id="Python完整代码"><a href="#Python完整代码" class="headerlink" title="Python完整代码"></a>Python完整代码</h2><p>运行下面代码即可实现视频文件转换为音频文件（注意修改文件路径）</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> os
-<span class="token keyword">from</span> ffmpy3 <span class="token keyword">import</span> FFmpeg
-
-<span class="token comment" spellcheck="true"># filepath：待处理视频的文件路径</span>
-filepath <span class="token operator">=</span> <span class="token string">"/Users/macos/Documents/Wilson79/GitHub/video-to-mp3/video"</span>
-filename <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>filepath<span class="token punctuation">)</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"待处理的视频文件:"</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># output_dir：输出音频文件的路径</span>
-output_dir <span class="token operator">=</span> <span class="token string">"/Users/macos/Documents/Wilson79/GitHub/video-to-mp3/music"</span>
-
-<span class="token comment" spellcheck="true"># 读取上次已导出的音频文件名（防止多次运行，出现overwrited的错误）</span>
-exit_filename <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>output_dir<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"已导出的音频文件: "</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>exit_filename<span class="token punctuation">)</span>
-
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 改文件的后缀名</span>
-    changefile <span class="token operator">=</span> filepath <span class="token operator">+</span> <span class="token string">"/"</span> <span class="token operator">+</span> filename<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-    change_postfix_name <span class="token operator">=</span>filename<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'mp4'</span><span class="token punctuation">,</span> <span class="token string">'mp3'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'flv'</span><span class="token punctuation">,</span> <span class="token string">'mp3'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 另外的视频格式请自行添加</span>
-
-    outputfile <span class="token operator">=</span> output_dir <span class="token operator">+</span> <span class="token string">"/"</span> <span class="token operator">+</span> change_postfix_name
-    <span class="token keyword">if</span> change_postfix_name <span class="token keyword">in</span> exit_filename<span class="token punctuation">:</span>
-        <span class="token keyword">continue</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>changefile<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># 利用FFmpeg进行转换</span>
-    fpg <span class="token operator">=</span> FFmpeg<span class="token punctuation">(</span>inputs<span class="token operator">=</span><span class="token punctuation">{</span>changefile<span class="token punctuation">:</span> None<span class="token punctuation">}</span><span class="token punctuation">,</span>
-                 outputs<span class="token operator">=</span><span class="token punctuation">{</span>outputfile<span class="token punctuation">:</span> <span class="token string">'-vn -ar 44100 -ac 2 -ab 192 -f mp3'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># mp3也可以换成wav等格式</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span>fpg<span class="token punctuation">.</span>cmd<span class="token punctuation">)</span>
-    fpg<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\n任务完成！！！"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="运行后的效果"><a href="#运行后的效果" class="headerlink" title="运行后的效果"></a>运行后的效果</h1><p><img src="https://img-blog.csdnimg.cn/20200212160136119.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
-<div align=center>
-<img src="https://img-blog.csdnimg.cn/20200212153448976.png" width="100%" height="70%" />
-</div>
-
-<div align=center>
-<img src="https://img-blog.csdnimg.cn/20200212153510214.png" width="100%" height="70%" />
-</div>
+<p><img src="https://img-blog.csdnimg.cn/20200308185752222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
 
             </div>
             <hr/>
@@ -574,7 +525,7 @@ exit_filename <span class="token operator">=</span> os<span class="token punctua
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weisenhui.top/posts/20236.html">https://weisenhui.top/posts/20236.html</a>
+                    <a href="https://weisenhui.top/posts/32313.html">https://weisenhui.top/posts/32313.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -658,24 +609,31 @@ exit_filename <span class="token operator">=</span> os<span class="token punctua
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/123321.html">
+                <a href="/posts/20236.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="NumPy Basics">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Transfer video to mp3">
                         
-                        <span class="card-title">NumPy Basics</span>
+                        <span class="card-title">Transfer video to mp3</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation ta
+                            前言
+视频文件大小一般都有200-300MB，而有时我只想要这个视频的背景音乐，把视频文件转换为音频文件，这样文件大小就会在10MB以内
+
+使用python可以快速批量的把视频文件转换为音频文件
+具体方法
+安装ffmpy3库
+
+用os模块把
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-04
                         </span>
                         <span class="publish-author">
                             
@@ -707,37 +665,32 @@ exit_filename <span class="token operator">=</span> os<span class="token punctua
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/32313.html">
+                <a href="/posts/11000.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Python-cheatsheets">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Master Theorem">
                         
-                        <span class="card-title">Python-cheatsheets</span>
+                        <span class="card-title">Master Theorem</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://www.datacamp.com/community/data-science-cheatsheets
-
-Jupyter Notebook
-Python Basics
-NumPy Basics
-Pandas Basics
-S
+                            主定理的内容《算法导论》中提到了主定理，用来分析分治方法带来的主定理是解决递归时间复杂度的一种直接方法，适合于以下类型的递推公式$$T(n) = aT(n/b) + O(n^d)  （a &gt;= 1 且 b &gt; 1）$$
+其中$n
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
@@ -747,8 +700,8 @@ S
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
