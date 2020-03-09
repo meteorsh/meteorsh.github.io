@@ -141,7 +141,7 @@
         <div class="logo-name">meteorsh</div>
         <div class="logo-desc">
             
-            华东师范大学 | 数据科学与工程 | 硕士
+            ECNU | Math &amp; DaSE | Master
             
         </div>
     </div>
@@ -372,7 +372,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['做许多事情的捷径就是一次只做一件事','The shortest way to do many things is to only one thing at a time.'],
+                        strings: ['做许多事情的捷径就是一次只做一件事', 'The shortest way to do many things is to only one thing at a time.'],
                         startDelay: 300,
                         typeSpeed: 80,
                         loop: true,
@@ -388,10 +388,10 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.  getDay getHours getMinutes
+    // If use Hours banner file must contain 24 pics, https://www.w3schools.com/jsref/jsref_gethours.asp
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getHours() + '.jpg)');
 </script>
-
 
 
             <div class="cover-btns">
@@ -446,18 +446,40 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/18.jpg');">
+                 style="background-image: url('/medias/featureimages/4.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col s10 offset-s1">
-                            <div class="title center-align">NumPy Basics</div>
+                            <div class="title center-align">Master Theorem</div>
                             <div class="description center-align">
                                 
-                                    The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation ta
+                                    详细介绍主定理的内容
                                 
                             </div>
                             <div class="cover-btns">
-                                <a href="/posts/123321.html" class="waves-effect waves-light btn" target="_blank">
+                                <a href="/posts/10001.html" class="waves-effect waves-light btn" target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/featureimages/25.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">Numpy Basis</div>
+                            <div class="description center-align">
+                                
+                                    The bjiggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation tasks without the need to write some loops.
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/posts/40594.html" class="waves-effect waves-light btn" target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>Read more
                                 </a>
                             </div>
@@ -604,7 +626,7 @@
     
     
     <div class="col s12" >
-        <div class="post-card" style="background-image: url('/medias/featureimages/10.jpg')">
+        <div class="post-card" style="background-image: url('/medias/featureimages/4.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -613,11 +635,11 @@
                         
                     
                 </div>
-                <a href="/posts/11000.html">
+                <a href="/posts/10001.html">
                     <h3 class="post-title">Master Theorem</h3>
                 </a>
-                <p class="post-description">主定理的内容《算法导论》中提到了主定理，用来分析分治方法带来的主定理是解决递归时间复杂度的一种直接方法，适合于以下类型的递推公式$$T(n) = aT(n/b) + O(</p>
-                <a href="/posts/11000.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                <p class="post-description">详细介绍主定理的内容</p>
+                <a href="/posts/10001.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>Read more
                 </a>
             </div>
@@ -626,7 +648,7 @@
     
     
     <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/18.jpg')">
+        <div class="post-card" style="background-image: url('/medias/featureimages/25.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -635,11 +657,11 @@
                         
                     
                 </div>
-                <a href="/posts/123321.html">
-                    <h3 class="post-title">NumPy Basics</h3>
+                <a href="/posts/40594.html">
+                    <h3 class="post-title">Numpy Basis</h3>
                 </a>
-                <p class="post-description">The biggest benefit of NumPy arrays is the use of simple array express</p>
-                <a href="/posts/123321.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
+                <p class="post-description">The bjiggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation tasks without the need to write some loops.</p>
+                <a href="/posts/40594.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>Read more
                 </a>
             </div>
@@ -648,7 +670,7 @@
     
     
     <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/14.jpg')">
+        <div class="post-card" style="background-image: url('/medias/featureimages/2.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -690,25 +712,72 @@ Jupyter N</p>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/123321.html">
+                    <a href="/posts/10001.html">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="NumPy Basics">
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Master Theorem">
                             
-                            <span class="card-title">NumPy Basics</span>
+                            <span class="card-title">Master Theorem</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation ta
+                                详细介绍主定理的内容
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">
+                            <span class="chip bg-color">算法</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/posts/40594.html">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Numpy Basis">
+                            
+                            <span class="card-title">Numpy Basis</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                The bjiggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation tasks without the need to write some loops.
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
                             </span>
                             <span class="publish-author">
                                 
@@ -741,7 +810,7 @@ Jupyter N</p>
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Transfer video to mp3">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Transfer video to mp3">
                             
                             <span class="card-title">Transfer video to mp3</span>
                         </div>
@@ -795,7 +864,7 @@ Jupyter N</p>
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Python-cheatsheets">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python-cheatsheets">
                             
                             <span class="card-title">Python-cheatsheets</span>
                         </div>
@@ -835,54 +904,6 @@ S
                         
                         <a href="/tags/Python/">
                             <span class="chip bg-color">Python</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/11000.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Master Theorem">
-                            
-                            <span class="card-title">Master Theorem</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                主定理的内容《算法导论》中提到了主定理，用来分析分治方法带来的主定理是解决递归时间复杂度的一种直接方法，适合于以下类型的递推公式$$T(n) = aT(n/b) + O(n^d)  （a &gt;= 1 且 b &gt; 1）$$
-其中$n
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">算法</span>
                         </a>
                         
                     </div>
@@ -935,8 +956,8 @@ S
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
+                    var startMonth = "7";
+                    var startDate = "7";
                     var startHour = "0";
                     var startMinute = "0";
                     var startSecond = "0";

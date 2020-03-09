@@ -148,7 +148,7 @@
         <div class="logo-name">meteorsh</div>
         <div class="logo-desc">
             
-            华东师范大学 | 数据科学与工程 | 硕士
+            ECNU | Math &amp; DaSE | Master
             
         </div>
     </div>
@@ -309,10 +309,23 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -463,11 +476,6 @@
                 </div>
                 
 
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-07
-                </div>
                 
 
                 
@@ -658,24 +666,24 @@ exit_filename <span class="token operator">=</span> os<span class="token punctua
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/123321.html">
+                <a href="/posts/40594.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="NumPy Basics">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Numpy Basis">
                         
-                        <span class="card-title">NumPy Basics</span>
+                        <span class="card-title">Numpy Basis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation ta
+                            The bjiggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation tasks without the need to write some loops.
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
                         </span>
                         <span class="publish-author">
                             
@@ -711,7 +719,7 @@ exit_filename <span class="token operator">=</span> os<span class="token punctua
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Python-cheatsheets">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python-cheatsheets">
                         
                         <span class="card-title">Python-cheatsheets</span>
                     </div>
@@ -969,8 +977,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
+                    var startMonth = "7";
+                    var startDate = "7";
                     var startHour = "0";
                     var startMinute = "0";
                     var startSecond = "0";

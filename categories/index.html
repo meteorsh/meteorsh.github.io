@@ -141,7 +141,7 @@
         <div class="logo-name">meteorsh</div>
         <div class="logo-desc">
             
-            华东师范大学 | 数据科学与工程 | 硕士
+            ECNU | Math &amp; DaSE | Master
             
         </div>
     </div>
@@ -318,7 +318,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['做许多事情的捷径就是一次只做一件事','The shortest way to do many things is to only one thing at a time.'],
+                        strings: ['做许多事情的捷径就是一次只做一件事', 'The shortest way to do many things is to only one thing at a time.'],
                         startDelay: 300,
                         typeSpeed: 80,
                         loop: true,
@@ -334,10 +334,10 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.  getDay getHours getMinutes
+    // If use Hours banner file must contain 24 pics, https://www.w3schools.com/jsref/jsref_gethours.asp
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getHours() + '.jpg)');
 </script>
-
 
     </div>
 </div>
@@ -477,8 +477,8 @@
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
+                    var startMonth = "7";
+                    var startDate = "7";
                     var startHour = "0";
                     var startMinute = "0";
                     var startSecond = "0";

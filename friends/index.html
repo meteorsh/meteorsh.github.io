@@ -141,7 +141,7 @@
         <div class="logo-name">meteorsh</div>
         <div class="logo-desc">
             
-            华东师范大学 | 数据科学与工程 | 硕士
+            ECNU | Math &amp; DaSE | Master
             
         </div>
     </div>
@@ -318,7 +318,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['做许多事情的捷径就是一次只做一件事','The shortest way to do many things is to only one thing at a time.'],
+                        strings: ['做许多事情的捷径就是一次只做一件事', 'The shortest way to do many things is to only one thing at a time.'],
                         startDelay: 300,
                         typeSpeed: 80,
                         loop: true,
@@ -334,10 +334,10 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.  getDay getHours getMinutes
+    // If use Hours banner file must contain 24 pics, https://www.w3schools.com/jsref/jsref_gethours.asp
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getHours() + '.jpg)');
 </script>
-
 
     </div>
 </div>
@@ -547,10 +547,10 @@
                             <div class="card frind-card1">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="https://img-blog.csdnimg.cn/20200214190254136.jpeg" alt="img">
+                                        <img src="https://img-blog.csdnimg.cn/2020030912465720.png" alt="img">
                                         <div>
-                                            <h1 class="friend-name">CSDN</h1>
-                                            <p style="position: relative;top: -35px;">平凡的脚步也可以走出伟大的行程</p>
+                                            <h1 class="friend-name">Wilson79</h1>
+                                            <p style="position: relative;top: -35px;">What's past is prologue.</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
@@ -576,27 +576,6 @@
                                     </div>
                                     <div class="friend-button">
                                         <a href="https://godweiyang.com" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            访问主页
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card3">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="http://image.luokangyuan.com/4027734.jpeg" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">闪烁之狐</h1>
-                                            <p style="position: relative;top: -35px;">编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://blinkfox.github.io/" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             访问主页
                                         </a>
@@ -677,8 +656,8 @@
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
+                    var startMonth = "7";
+                    var startDate = "7";
                     var startHour = "0";
                     var startMinute = "0";
                     var startSecond = "0";

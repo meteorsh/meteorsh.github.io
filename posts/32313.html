@@ -147,7 +147,7 @@ S">
         <div class="logo-name">meteorsh</div>
         <div class="logo-desc">
             
-            华东师范大学 | 数据科学与工程 | 硕士
+            ECNU | Math &amp; DaSE | Master
             
         </div>
     </div>
@@ -308,10 +308,23 @@ S">
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -463,11 +476,6 @@ S">
                 
 
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-08
-                </div>
-                
 
                 
                 <div class="info-break-policy">
@@ -613,7 +621,7 @@ S">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Transfer video to mp3">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Transfer video to mp3">
                         
                         <span class="card-title">Transfer video to mp3</span>
                     </div>
@@ -662,46 +670,52 @@ S">
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/posts/11000.html">
+                <a href="/posts/32313.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Master Theorem">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python-cheatsheets">
                         
-                        <span class="card-title">Master Theorem</span>
+                        <span class="card-title">Python-cheatsheets</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            主定理的内容《算法导论》中提到了主定理，用来分析分治方法带来的主定理是解决递归时间复杂度的一种直接方法，适合于以下类型的递推公式$$T(n) = aT(n/b) + O(n^d)  （a &gt;= 1 且 b &gt; 1）$$
-其中$n
+                            https://www.datacamp.com/community/data-science-cheatsheets
+
+Jupyter Notebook
+Python Basics
+NumPy Basics
+Pandas Basics
+S
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-04
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
@@ -922,8 +936,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
+                    var startMonth = "7";
+                    var startDate = "7";
                     var startHour = "0";
                     var startMinute = "0";
                     var startSecond = "0";

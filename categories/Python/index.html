@@ -141,7 +141,7 @@
         <div class="logo-name">meteorsh</div>
         <div class="logo-desc">
             
-            华东师范大学 | 数据科学与工程 | 硕士
+            ECNU | Math &amp; DaSE | Master
             
         </div>
     </div>
@@ -318,7 +318,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['做许多事情的捷径就是一次只做一件事','The shortest way to do many things is to only one thing at a time.'],
+                        strings: ['做许多事情的捷径就是一次只做一件事', 'The shortest way to do many things is to only one thing at a time.'],
                         startDelay: 300,
                         typeSpeed: 80,
                         loop: true,
@@ -334,10 +334,10 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.  getDay getHours getMinutes
+    // If use Hours banner file must contain 24 pics, https://www.w3schools.com/jsref/jsref_gethours.asp
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getHours() + '.jpg)');
 </script>
-
 
     </div>
 </div>
@@ -386,24 +386,24 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/123321.html">
+                    <a href="/posts/40594.html">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="NumPy Basics">
+                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Numpy Basis">
                             
-                            <span class="card-title">NumPy Basics</span>
+                            <span class="card-title">Numpy Basis</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                The biggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation ta
+                                The bjiggest benefit of NumPy arrays is the use of simple array expressions to complete a variety of data manipulation tasks without the need to write some loops.
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
                             </span>
                             <span class="publish-author">
                                 
@@ -436,7 +436,7 @@
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Python-cheatsheets">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Python-cheatsheets">
                             
                             <span class="card-title">Python-cheatsheets</span>
                         </div>
@@ -488,7 +488,7 @@ S
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Transfer video to mp3">
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Transfer video to mp3">
                             
                             <span class="card-title">Transfer video to mp3</span>
                         </div>
@@ -579,8 +579,8 @@ S
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2019";
-                    var startMonth = "6";
-                    var startDate = "28";
+                    var startMonth = "7";
+                    var startDate = "7";
                     var startHour = "0";
                     var startMinute = "0";
                     var startSecond = "0";
