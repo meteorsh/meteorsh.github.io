@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-03-11T00:30:46.153Z</updated>
+  <updated>2020-03-12T06:57:16.678Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -17,38 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Numpy Basis</title>
-    <link href="https://weisenhui.top/posts/40594.html"/>
-    <id>https://weisenhui.top/posts/40594.html</id>
-    <published>2020-03-14T16:00:00.000Z</published>
-    <updated>2020-03-11T00:30:46.153Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div align=center&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://weisenhui.top/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://weisenhui.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Master Theorem</title>
     <link href="https://weisenhui.top/posts/10001.html"/>
     <id>https://weisenhui.top/posts/10001.html</id>
     <published>2020-03-14T16:00:00.000Z</published>
-    <updated>2020-03-09T06:04:29.140Z</updated>
+    <updated>2020-03-12T06:57:16.678Z</updated>
     
     <summary type="html">
     
@@ -71,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>Python-cheatsheets</title>
-    <link href="https://weisenhui.top/posts/32313.html"/>
-    <id>https://weisenhui.top/posts/32313.html</id>
-    <published>2020-03-04T14:00:00.000Z</published>
-    <updated>2020-03-09T06:34:12.585Z</updated>
+    <title>How to download bilibili videos</title>
+    <link href="https://weisenhui.top/posts/2342.html"/>
+    <id>https://weisenhui.top/posts/2342.html</id>
+    <published>2020-03-11T16:00:00.000Z</published>
+    <updated>2020-03-12T06:56:35.141Z</updated>
     
     <summary type="html">
     
@@ -83,17 +56,17 @@
       
         
         
-          &lt;p&gt;&lt;a href=&quot;https://www.datacamp.com/community/data-science-cheatsheets&quot; target=&quot;_blank&quot;
+          &lt;h1 id=&quot;唧唧Down—适合Windows-强烈推荐&quot;&gt;&lt;a href=&quot;#唧唧Down—适合Windows-强烈推荐&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
-      <category term="Python" scheme="https://weisenhui.top/categories/Python/"/>
+      <category term="计算机知识" scheme="https://weisenhui.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
     
     
-      <category term="Python" scheme="https://weisenhui.top/tags/Python/"/>
+      <category term="计算机知识" scheme="https://weisenhui.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -102,7 +75,7 @@
     <link href="https://weisenhui.top/posts/20236.html"/>
     <id>https://weisenhui.top/posts/20236.html</id>
     <published>2020-03-04T14:00:00.000Z</published>
-    <updated>2020-03-07T00:39:09.170Z</updated>
+    <updated>2020-03-12T06:56:10.362Z</updated>
     
     <summary type="html">
     
