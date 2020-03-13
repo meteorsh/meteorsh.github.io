@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-03-12T07:31:31.601Z</updated>
+  <updated>2020-03-13T04:00:17.690Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git pull | git clone</title>
+    <link href="https://weisenhui.top/posts/14023.html"/>
+    <id>https://weisenhui.top/posts/14023.html</id>
+    <published>2020-03-12T16:00:00.000Z</published>
+    <updated>2020-03-13T04:00:17.690Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题：git-push-origin-master时报错&quot;&gt;&lt;a href=&quot;#问题：git-push-origin-master时报错&quot; class=&quot;headerlink&quot; title=&quot;问题：git push origin
+        
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://weisenhui.top/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://weisenhui.top/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>How to download bilibili videos</title>

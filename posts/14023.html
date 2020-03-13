@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="How to download bilibili videos, meteorsh">
-    <meta name="description" content="唧唧Down、Downie、youtube-dl">
+    <meta name="keywords" content="git pull | git clone, meteorsh">
+    <meta name="description" content="解决git push origin master时的报错">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>How to download bilibili videos | meteorsh</title>
+    <title>git pull | git clone | meteorsh</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -318,12 +318,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-blog.csdnimg.cn/2020031215311965.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">How to download bilibili videos</h1>
+                    <h1 class="description center-align post-title">git pull | git clone</h1>
                 </div>
             </div>
         </div>
@@ -440,8 +440,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
-                                <span class="chip bg-color">计算机知识</span>
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -452,8 +452,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="post-category">
-                                计算机知识
+                            <a href="/categories/git/" class="post-category">
+                                git
                             </a>
                         
                     </div>
@@ -465,7 +465,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-12
+                    2020-03-13
                 </div>
                 
 
@@ -474,14 +474,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    421
+                    903
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -492,36 +492,39 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="唧唧Down—适合Windows-强烈推荐"><a href="#唧唧Down—适合Windows-强烈推荐" class="headerlink" title="唧唧Down—适合Windows(强烈推荐)"></a>唧唧Down—适合Windows(强烈推荐)</h1><blockquote>
-<p>哔哩哔哩下载神器：唧唧Down<br>官网：<a href="http://client.jijidown.com/" target="_blank" rel="noopener">http://client.jijidown.com/</a></p>
-</blockquote>
+                <h1 id="问题：git-push-origin-master时报错"><a href="#问题：git-push-origin-master时报错" class="headerlink" title="问题：git push origin master时报错"></a>问题：git push origin master时报错</h1><pre><code>$ git push origin master
+To github.com:meteorsh/demo.git
+ ! [rejected]        master -&gt; master (fetch first)
+error: failed to push some refs to &#39;git@github.com:meteorsh/demo.git&#39;
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., &#39;git pull ...&#39;) before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</code></pre><h1 id="法一：git-pull"><a href="#法一：git-pull" class="headerlink" title="法一：git pull"></a>法一：git pull</h1><p>使用<code>git pull --rebase origin master</code>来合并远程GitHub库和本地库的文件，本地会生成之前你没有进行同步的文件</p>
+<p><strong>举个栗子</strong>：A和B一起开发和维护一个GitHub仓库，周二是A工作，周三是B工作。周一的时候A和B的从远端clone了一份仓库到各自的本地库，但是当A完成周二的工作时，远端GitHub仓库的内容已经有了更新或者说添加了commit，那么到了周三B必须先把自己的本地仓库更新成远端最新的GitHub仓库，然后再开始这一天的工作，这是显然是非常合理的工作流程</p>
+<p>但如果两个人工作时间很近(如只间隔1小时)，那B以为远端GitHub没更新过，其实A已经更新了远端仓库，这时不可避免会出现git push冲突的问题</p>
+<div align=center><img src="https://img-blog.csdnimg.cn/20200313115029204.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_cGhvdG8gYnkgc2h3ZWk=,size_25,color_FFFFFF,t_50,g_center" width="70%"/></div>
+
+<p>所以这时要用到<code>git pull --rebase origin master</code>命令</p>
+<h2 id="1-1-实例演示1"><a href="#1-1-实例演示1" class="headerlink" title="1.1 实例演示1"></a>1.1 实例演示1</h2><p><img src="https://img-blog.csdnimg.cn/202003131014261.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313101702994.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313101943652.png" alt=""><br>这时再git push origin master就不会有冲突了<br><img src="https://img-blog.csdnimg.cn/20200313102143427.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313102125158.png" alt=""></p>
+<p>从远端拉取分支，其实有下面两种方式（两者具体区别我还没有深入研究）</p>
+<pre><code>git pull = git fetch &amp;&amp; git merge
+git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再用git pull origin master来拉取分支</p>
+<h2 id="1-2-git-pull命令后fix-conflicts"><a href="#1-2-git-pull命令后fix-conflicts" class="headerlink" title="1.2 git pull命令后fix conflicts"></a>1.2 git pull命令后fix conflicts</h2><p>有时候，使用git pull命令会产生冲突（因为这里远端和本地库都修改了local-test1.txt文件）</p>
+<p>我们需要手动fix冲突，然后添加一个新的commit，最后git push到远端GitHub库<br><img src="https://img-blog.csdnimg.cn/20200313104032204.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313103532295.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313104849341.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313104806965.png" alt=""><br>然后git push origin master推到远端GitHub库即可</p>
+<p><img src="https://img-blog.csdnimg.cn/20200313105627529.png" alt=""></p>
+<hr>
+<p>PS：这时在终端用glog命令，让我明白了<code>HEAD -&gt; master, origin/master, origin/HEAD</code>这几句话的含义<br><img src="https://img-blog.csdnimg.cn/20200313105241102.png" alt=""></p>
+<h2 id="1-3-使用git-pull前必须先进行git-commit"><a href="#1-3-使用git-pull前必须先进行git-commit" class="headerlink" title="1.3 使用git pull前必须先进行git commit"></a>1.3 使用git pull前必须先进行git commit</h2><p>git pull是建立在你的修改已经加到git的历史世界线上的（commit形成一个结点）</p>
 <ul>
-<li>下载完成后，运行软件</li>
-<li>只要把你想下载的b站视频网址复制到该软件就可以下载</li>
-<li>视频清晰度可选1080p，还可以设置是否下载弹幕</li>
-<li>用这款软件再配合potplayer，可以尽情享用b站任何视频</li>
-</ul>
-<p><img src="http://jfile.jijidown.com/Web/client.jijidown.com/img/newlook.png?20171208" alt=""></p>
-<h1 id="Chrome插件—适合Mac-Windows"><a href="#Chrome插件—适合Mac-Windows" class="headerlink" title="Chrome插件—适合Mac/Windows"></a>Chrome插件—适合Mac/Windows</h1><ul>
-<li><p>借助Chrome插件 bilibili哔哩哔哩下载助手<br><img src="https://img-blog.csdnimg.cn/20190930112541271.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
+<li><p>每次使用git pull命令前，需要将本地工作区编辑过的文件添加到暂存区（git add .），或提交到本地仓库中(git commit)，才可以使用该命令拉取指定分支的代码合并到当前分支中</p>
 </li>
-<li><p>在谷歌应用商城下载安装后在b站视频右下角打开下载助手，点击合并下载即可<br><img src="https://img-blog.csdnimg.cn/2019093011282092.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
+<li><p>每次在操作完git commit命令后，必须拉取一下master分支代码，保持本地正在开发功能逻辑的代码分支代码是最新的，避免后续在提交时冲突过多或覆盖掉其他人的代码的问题出现</p>
 </li>
 </ul>
-<h1 id="GitHub开源youtube-dl—适合Mac-Windows"><a href="#GitHub开源youtube-dl—适合Mac-Windows" class="headerlink" title="GitHub开源youtube-dl—适合Mac/Windows"></a>GitHub开源youtube-dl—适合Mac/Windows</h1><p>项目地址: <a href="https://github.com/ytdl-org/youtube-dl" target="_blank" rel="noopener">https://github.com/ytdl-org/youtube-dl</a></p>
-<p>一：mac下安装方法很简单<br>打开终端根目录，输入下面两条命令即可</p>
-<pre><code>sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
-<ol>
-<li>youtube-dl 网址      //在哪个文件夹用终端，就会把文件下载到这个文件夹</li>
-<li>youtube-dl 网址 -o ‘你要的名字.mp4’</li>
-<li>youtube-dl -F 网址             //查看支持的视频格式</li>
-<li>youtube-dl -f format编号 网址  //下载对应的视频格式, 一般默认是best画质</li>
-</ol>
-<p>说明: 此方法不仅可以下载b站视频也可以下载youtube视频<br><img src="https://img-blog.csdnimg.cn/20190930144743703.png" alt=""></p>
-<p>至于Windows下使用就更简单了，直接在项目地址那下载exe文件就可以使用了<br><img src="https://img-blog.csdnimg.cn/20190930144933247.png" alt=""></p>
-<h1 id="Downie-适合Mac-强烈推荐"><a href="#Downie-适合Mac-强烈推荐" class="headerlink" title="Downie-适合Mac(强烈推荐)"></a>Downie-适合Mac(强烈推荐)</h1><p>可以下载很多网站的视频，比如Youtube、Bilibili等，号称mac上最好的视频下载器</p>
-<p>注意：这款软件是付费的，但如果长期用的话，这点钱值的花</p>
+<h2 id="1-4-实例演示2"><a href="#1-4-实例演示2" class="headerlink" title="1.4 实例演示2"></a>1.4 实例演示2</h2><p>我在本地修改了local-test1.txt文件，但是还没有git commit，同时远端GitHub我也修改了local-test1.txt文件，此时git会报错<br><img src="https://img-blog.csdnimg.cn/20200313110451342.png" alt=""><br><strong>解决方法</strong>：把本地的所有修改用git commit添加到暂存区，然后再用git pull命令<br><img src="https://img-blog.csdnimg.cn/20200313111222290.png" alt=""><br>未合并冲突前，git记录可视化是这样的<br><img src="https://img-blog.csdnimg.cn/20200313111244175.png" alt=""><br>此时直接git push会报错：Updates were rejected because the tip of your current branch is behind its remote counterpart. Integrate the remote changes<br><img src="https://img-blog.csdnimg.cn/20200313111341261.png" alt=""><br>正确做法当然是先解决冲突(手动修复冲突文件)，然后git commit，最后再git push<br><img src="https://img-blog.csdnimg.cn/20200313111555670.png" alt=""></p>
+<h1 id="法二：git-clone"><a href="#法二：git-clone" class="headerlink" title="法二：git clone"></a>法二：git clone</h1><p> <code>git clone 仓库地址</code></p>
+<p>这时你进入clone的文件夹用git add, git commit, git push等命令就不会出现报错</p>
 
             </div>
             <hr/>
@@ -547,7 +550,7 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weisenhui.top/posts/2342.html">https://weisenhui.top/posts/2342.html</a>
+                    <a href="https://weisenhui.top/posts/14023.html">https://weisenhui.top/posts/14023.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -585,8 +588,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
-                                    <span class="chip bg-color">计算机知识</span>
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -627,9 +630,10 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/posts/14023.html">
                     <div class="card-image">
@@ -647,9 +651,9 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -662,6 +666,7 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -680,19 +685,18 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/100323.html">
+                <a href="/posts/2342.html">
                     <div class="card-image">
                         
+                        <img src="https://img-blog.csdnimg.cn/2020031215311965.png" class="responsive-img" alt="How to download bilibili videos">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Jupyter Notebook vim mode">
-                        
-                        <span class="card-title">Jupyter Notebook vim mode</span>
+                        <span class="card-title">How to download bilibili videos</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            how to map in jupyter notebook
+                            唧唧Down、Downie、youtube-dl
                         
                     </div>
                     <div class="publish-info">
@@ -703,8 +707,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="post-category">
+                                    计算机知识
                                 </a>
                             
                             
@@ -714,8 +718,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">计算机知识</span>
                     </a>
                     
                 </div>
