@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="How to download bilibili videos, meteorsh">
-    <meta name="description" content="唧唧Down、Downie、youtube-dl">
+    <meta name="keywords" content="Accelerate git clone speed, meteorsh">
+    <meta name="description" content="提高GitHub git clone速度的方法（码云√ 代理√ hosts×）">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>How to download bilibili videos | meteorsh</title>
+    <title>Accelerate git clone speed | meteorsh</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -318,12 +318,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img-blog.csdnimg.cn/2020031215311965.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">How to download bilibili videos</h1>
+                    <h1 class="description center-align post-title">Accelerate git clone speed</h1>
                 </div>
             </div>
         </div>
@@ -440,8 +440,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
-                                <span class="chip bg-color">计算机知识</span>
+                            <a href="/tags/Git/">
+                                <span class="chip bg-color">Git</span>
                             </a>
                         
                     </div>
@@ -452,8 +452,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="post-category">
-                                计算机知识
+                            <a href="/categories/Git/" class="post-category">
+                                Git
                             </a>
                         
                     </div>
@@ -465,7 +465,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-12
+                    2020-03-13
                 </div>
                 
 
@@ -474,7 +474,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    421
+                    431
                 </div>
                 
 
@@ -492,36 +492,22 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="唧唧Down—适合Windows-强烈推荐"><a href="#唧唧Down—适合Windows-强烈推荐" class="headerlink" title="唧唧Down—适合Windows(强烈推荐)"></a>唧唧Down—适合Windows(强烈推荐)</h1><blockquote>
-<p>哔哩哔哩下载神器：唧唧Down<br>官网：<a href="http://client.jijidown.com/" target="_blank" rel="noopener">http://client.jijidown.com/</a></p>
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><blockquote>
+<p>我们很多时候需要克隆某个GitHub项目（以克隆ItChat库为例），在使用<code>git clone</code>时，那速度简直慢到令人发指<br><img src="https://img-blog.csdnimg.cn/20200308151742622.png" alt=""><br>虽然网上有不少教程说修改DNS或hosts来加速，但我尝试过效果一般，当然用全局代理也是可以的</p>
 </blockquote>
+<p>于是我今天想介绍一个==加速git clone==的非常靠谱且快速的方法，<code>速度从4kb/s飙升到2MB/S</code></p>
+<h1 id="码云是个优秀的“工具人”"><a href="#码云是个优秀的“工具人”" class="headerlink" title="码云是个优秀的“工具人”"></a>码云是个优秀的“工具人”</h1><p><font color=red size=3 face=STHeit>简单来说就是，我们先把GitHub仓库克隆到码云中(10秒完成)，然后在git clone这个码云仓库（因为是国内服务，速度极快），最后修改远端remote链接即可</font></p>
+<h2 id="（1）注册一个码云账号"><a href="#（1）注册一个码云账号" class="headerlink" title="（1）注册一个码云账号"></a>（1）注册一个码云账号</h2><p>码云是国内代码托管服务的领先者，很认真的产品。适合国内程序员习惯，访问速度极快</p>
+<p>官方地址: <a href="https://gitee.com" target="_blank" rel="noopener">https://gitee.com</a><br><img src="https://img-blog.csdnimg.cn/20200308151409610.png" alt=""><br>然后添加Gitee的SSH公钥（如果之前GitHub已经注册生成过SSH公钥，可以直接使用那个公钥）<br><a href="https://blog.csdn.net/shog808/article/details/76563136" target="_blank" rel="noopener">查看本机ssh公钥，生成公钥</a> | <a href="https://gitee.com/help/articles/4181#article-header0" target="_blank" rel="noopener">生成/添加SSH公钥</a></p>
+<h2 id="（2）将GitHub仓库导入到码云Gitee中"><a href="#（2）将GitHub仓库导入到码云Gitee中" class="headerlink" title="（2）将GitHub仓库导入到码云Gitee中"></a>（2）将GitHub仓库导入到码云Gitee中</h2><p><img src="https://img-blog.csdnimg.cn/20200308151532271.png" alt=""><br><strong>10秒内即可完成导入</strong><br><img src="https://img-blog.csdnimg.cn/20200308151810660.png" alt=""></p>
+<h2 id="（3）git-clone-码云仓库"><a href="#（3）git-clone-码云仓库" class="headerlink" title="（3）git clone 码云仓库"></a>（3）git clone 码云仓库</h2><p>复制SSH地址（使用HTTPS可能会克隆失败）<br><img src="https://img-blog.csdnimg.cn/20200308160048359.png" alt=""><br>输入命令<br><code>git clone git@gitee.com:weisenhui/ItChat.git</code><br><img src="https://img-blog.csdnimg.cn/20200308154231871.png" alt=""></p>
+<h2 id="（4）建立文件夹与GitHub的链接"><a href="#（4）建立文件夹与GitHub的链接" class="headerlink" title="（4）建立文件夹与GitHub的链接"></a>（4）建立文件夹与GitHub的链接</h2><p>克隆下来的是文件夹是与远端gitee链接在一起的，因此我们还需要修改remote，建立与原GitHub仓库的链接<br><img src="https://img-blog.csdnimg.cn/20200308154330335.png" alt=""><br>使用命令<br><code>git remote set-url origin https://github.com/littlecodersh/ItChat.git</code><br><img src="https://img-blog.csdnimg.cn/20200308154648826.png" alt=""><br>大功告成！！！</p>
+<hr>
+<p>Reference</p>
 <ul>
-<li>下载完成后，运行软件</li>
-<li>只要把你想下载的b站视频网址复制到该软件就可以下载</li>
-<li>视频清晰度可选1080p，还可以设置是否下载弹幕</li>
-<li>用这款软件再配合potplayer，可以尽情享用b站任何视频</li>
+<li><a href="https://blog.csdn.net/shog808/article/details/76563136" target="_blank" rel="noopener">查看本机ssh公钥，生成公钥</a></li>
+<li><a href="https://blog.csdn.net/M_WBCG/article/details/79156781" target="_blank" rel="noopener">如何解决The authenticity of host ‘gitee.com (120.55.226.24)’ can’t be established</a></li>
 </ul>
-<p><img src="http://jfile.jijidown.com/Web/client.jijidown.com/img/newlook.png?20171208" alt=""></p>
-<h1 id="Chrome插件—适合Mac-Windows"><a href="#Chrome插件—适合Mac-Windows" class="headerlink" title="Chrome插件—适合Mac/Windows"></a>Chrome插件—适合Mac/Windows</h1><ul>
-<li><p>借助Chrome插件 bilibili哔哩哔哩下载助手<br><img src="https://img-blog.csdnimg.cn/20190930112541271.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
-</li>
-<li><p>在谷歌应用商城下载安装后在b站视频右下角打开下载助手，点击合并下载即可<br><img src="https://img-blog.csdnimg.cn/2019093011282092.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODI3NTk1,size_16,color_FFFFFF,t_70" alt=""></p>
-</li>
-</ul>
-<h1 id="GitHub开源youtube-dl—适合Mac-Windows"><a href="#GitHub开源youtube-dl—适合Mac-Windows" class="headerlink" title="GitHub开源youtube-dl—适合Mac/Windows"></a>GitHub开源youtube-dl—适合Mac/Windows</h1><p>项目地址: <a href="https://github.com/ytdl-org/youtube-dl" target="_blank" rel="noopener">https://github.com/ytdl-org/youtube-dl</a></p>
-<p>一：mac下安装方法很简单<br>打开终端根目录，输入下面两条命令即可</p>
-<pre><code>sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
-<ol>
-<li>youtube-dl 网址      //在哪个文件夹用终端，就会把文件下载到这个文件夹</li>
-<li>youtube-dl 网址 -o ‘你要的名字.mp4’</li>
-<li>youtube-dl -F 网址             //查看支持的视频格式</li>
-<li>youtube-dl -f format编号 网址  //下载对应的视频格式, 一般默认是best画质</li>
-</ol>
-<p>说明: 此方法不仅可以下载b站视频也可以下载youtube视频<br><img src="https://img-blog.csdnimg.cn/20190930144743703.png" alt=""></p>
-<p>至于Windows下使用就更简单了，直接在项目地址那下载exe文件就可以使用了<br><img src="https://img-blog.csdnimg.cn/20190930144933247.png" alt=""></p>
-<h1 id="Downie-适合Mac-强烈推荐"><a href="#Downie-适合Mac-强烈推荐" class="headerlink" title="Downie-适合Mac(强烈推荐)"></a>Downie-适合Mac(强烈推荐)</h1><p>可以下载很多网站的视频，比如Youtube、Bilibili等，号称mac上最好的视频下载器</p>
-<p>注意：这款软件是付费的，但如果长期用的话，这点钱值的花</p>
 
             </div>
             <hr/>
@@ -547,7 +533,7 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weisenhui.top/posts/2342.html">https://weisenhui.top/posts/2342.html</a>
+                    <a href="https://weisenhui.top/posts/102340.html">https://weisenhui.top/posts/102340.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -585,8 +571,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
-                                    <span class="chip bg-color">计算机知识</span>
+                                <a href="/tags/Git/">
+                                    <span class="chip bg-color">Git</span>
                                 </a>
                             
                         </div>
@@ -631,19 +617,19 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/posts/102340.html">
+                <a href="/posts/14023.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Accelerate git clone speed">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git pull && git clone">
                         
-                        <span class="card-title">Accelerate git clone speed</span>
+                        <span class="card-title">git pull && git clone</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提高GitHub git clone速度的方法（码云√ 代理√ hosts×）
+                            解决git push origin master时的报错
                         
                     </div>
                     <div class="publish-info">
@@ -680,19 +666,18 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/100323.html">
+                <a href="/posts/2342.html">
                     <div class="card-image">
                         
+                        <img src="https://img-blog.csdnimg.cn/2020031215311965.png" class="responsive-img" alt="How to download bilibili videos">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Jupyter Notebook vim mode">
-                        
-                        <span class="card-title">Jupyter Notebook vim mode</span>
+                        <span class="card-title">How to download bilibili videos</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            how to map in jupyter notebook
+                            唧唧Down、Downie、youtube-dl
                         
                     </div>
                     <div class="publish-info">
@@ -703,8 +688,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/" class="post-category">
+                                    计算机知识
                                 </a>
                             
                             
@@ -714,8 +699,8 @@ sudo chmod a+rx /usr/local/bin/youtube-dl</code></pre><p>二：使用方法</p>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">计算机知识</span>
                     </a>
                     
                 </div>
