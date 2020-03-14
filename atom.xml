@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>meteorsh</title>
+  <title>SHWEI&#39;S BLOG</title>
   
   <subtitle>Stay Hungry</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://weisenhui.top/</id>
   
   <author>
-    <name>meteorsh</name>
+    <name>shwei</name>
     
   </author>
   
@@ -48,7 +48,7 @@
     <link href="https://weisenhui.top/posts/102340.html"/>
     <id>https://weisenhui.top/posts/102340.html</id>
     <published>2020-03-12T16:00:00.000Z</published>
-    <updated>2020-03-13T06:09:05.758Z</updated>
+    <updated>2020-03-14T06:39:14.692Z</updated>
     
     <summary type="html">
     
