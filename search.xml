@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>jupter notebook %matplotlib</title>
+      <link href="/posts/56576.html"/>
+      <url>/posts/56576.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>在使用jupyter notebook时经常会用到matplotlib库，来实现交互式绘图，能够支持数据查看，数据位置确定，图像移动等功能</p></blockquote><h1 id="matplotlib-notebook（推荐）"><a href="#matplotlib-notebook（推荐）" class="headerlink" title="%matplotlib notebook（推荐）"></a>%matplotlib notebook（推荐）</h1><p>在开头加上如下代码可以在jupyter notebook行内形成交互式的图表</p><pre><code>%matplotlib notebook</code></pre><div align=center><img src="https://img-blog.csdnimg.cn/20200316232613354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div># %matplotlib在开头加上如下代码可以在mac内形成交互式的图表，即会弹出图像窗口```%matplotlib```<div align=center><img src="https://img-blog.csdnimg.cn/20200316231933756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><hr><h1 id="matplotlib-inline"><a href="#matplotlib-inline" class="headerlink" title="%matplotlib inline"></a>%matplotlib inline</h1><p>开头加上如下代码可以显示图像，但无交互功能</p><pre><code>%matplotlib inline</code></pre><div align=center><img src="https://img-blog.csdnimg.cn/20200316233957769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>如果开头不加上面所说的代码，运行后也会形成一张干巴巴的图片，无法实现交互式功能</p><div align=center><img src="https://img-blog.csdnimg.cn/2020031623271139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div># 一个细节：在每个单元格运行后，图表被重置使用jupyter notebook时有个细节需要注意，在每个单元格运行后，图表被重置，因此对于复杂的图标，你必须将所有的绘图命名放在单个的notebook单元格内<div align=center><img src="https://img-blog.csdnimg.cn/20200316234943598.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><hr><div align=center><img src="https://img-blog.csdnimg.cn/20200316234832859.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git pull &amp;&amp; git clone</title>
       <link href="/posts/14023.html"/>
       <url>/posts/14023.html</url>

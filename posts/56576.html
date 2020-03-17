@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git pull &amp;&amp; git clone, SHWEI&#39;S BLOG">
-    <meta name="description" content="解决git push origin master时的报错">
+    <meta name="keywords" content="jupter notebook %matplotlib, SHWEI&#39;S BLOG">
+    <meta name="description" content="
+在使用jupyter notebook时经常会用到matplotlib库，来实现交互式绘图，能够支持数据查看，数据位置确定，图像移动等功能
+
+%matplotlib notebook（推荐）在开头加上如下代码可以在jupyter note">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>git pull &amp;&amp; git clone | SHWEI&#39;S BLOG</title>
+    <title>jupter notebook %matplotlib | SHWEI&#39;S BLOG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -327,7 +330,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '123';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -340,12 +343,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/24.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">git pull &amp;&amp; git clone</h1>
+                    <h1 class="description center-align post-title">jupter notebook %matplotlib</h1>
                 </div>
             </div>
         </div>
@@ -462,8 +465,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Git/">
-                                <span class="chip bg-color">Git</span>
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
                             </a>
                         
                     </div>
@@ -474,8 +477,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Git/" class="post-category">
-                                Git
+                            <a href="/categories/Python/" class="post-category">
+                                Python
                             </a>
                         
                     </div>
@@ -487,7 +490,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-13
+                    2020-03-17
                 </div>
                 
 
@@ -496,14 +499,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    903
+                    239
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    1 Min
                 </div>
                 
 
@@ -514,39 +517,34 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="问题：git-push-origin-master时报错"><a href="#问题：git-push-origin-master时报错" class="headerlink" title="问题：git push origin master时报错"></a>问题：git push origin master时报错</h1><pre><code>$ git push origin master
-To github.com:meteorsh/demo.git
- ! [rejected]        master -&gt; master (fetch first)
-error: failed to push some refs to &#39;git@github.com:meteorsh/demo.git&#39;
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., &#39;git pull ...&#39;) before pushing again.
-hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</code></pre><h1 id="法一：git-pull"><a href="#法一：git-pull" class="headerlink" title="法一：git pull"></a>法一：git pull</h1><p>使用<code>git pull --rebase origin master</code>来合并远程GitHub库和本地库的文件，本地会生成之前你没有进行同步的文件</p>
-<p><strong>举个栗子</strong>：A和B一起开发和维护一个GitHub仓库，周二是A工作，周三是B工作。周一的时候A和B的从远端clone了一份仓库到各自的本地库，但是当A完成周二的工作时，远端GitHub仓库的内容已经有了更新或者说添加了commit，那么到了周三B必须先把自己的本地仓库更新成远端最新的GitHub仓库，然后再开始这一天的工作，这是显然是非常合理的工作流程</p>
-<p>但如果两个人工作时间很近(如只间隔1小时)，那B以为远端GitHub没更新过，其实A已经更新了远端仓库，这时不可避免会出现git push冲突的问题</p>
-<div align=center><img src="https://img-blog.csdnimg.cn/20200313115029204.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_cGhvdG8gYnkgc2h3ZWk=,size_25,color_FFFFFF,t_50,g_center" width="70%"/></div>
+                <blockquote>
+<p>在使用jupyter notebook时经常会用到matplotlib库，来实现交互式绘图，能够支持数据查看，数据位置确定，图像移动等功能</p>
+</blockquote>
+<h1 id="matplotlib-notebook（推荐）"><a href="#matplotlib-notebook（推荐）" class="headerlink" title="%matplotlib notebook（推荐）"></a>%matplotlib notebook（推荐）</h1><p>在开头加上如下代码可以在jupyter notebook行内形成交互式的图表</p>
+<pre><code>%matplotlib notebook</code></pre><div align=center><img src="https://img-blog.csdnimg.cn/20200316232613354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>
+# %matplotlib
+在开头加上如下代码可以在mac内形成交互式的图表，即会弹出图像窗口
+```
+%matplotlib
+```
+<div align=center><img src="https://img-blog.csdnimg.cn/20200316231933756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>
 
-<p>所以这时要用到<code>git pull --rebase origin master</code>命令</p>
-<h2 id="1-1-实例演示1"><a href="#1-1-实例演示1" class="headerlink" title="1.1 实例演示1"></a>1.1 实例演示1</h2><p><img src="https://img-blog.csdnimg.cn/202003131014261.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313101702994.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313101943652.png" alt=""><br>这时再git push origin master就不会有冲突了<br><img src="https://img-blog.csdnimg.cn/20200313102143427.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313102125158.png" alt=""></p>
-<p>从远端拉取分支，其实有下面两种方式（两者具体区别我还没有深入研究）</p>
-<pre><code>git pull = git fetch &amp;&amp; git merge
-git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再用git pull origin master来拉取分支</p>
-<h2 id="1-2-git-pull命令后fix-conflicts"><a href="#1-2-git-pull命令后fix-conflicts" class="headerlink" title="1.2 git pull命令后fix conflicts"></a>1.2 git pull命令后fix conflicts</h2><p>有时候，使用git pull命令会产生冲突（因为这里远端和本地库都修改了local-test1.txt文件）</p>
-<p>我们需要手动fix冲突，然后添加一个新的commit，最后git push到远端GitHub库<br><img src="https://img-blog.csdnimg.cn/20200313104032204.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313103532295.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313104849341.png" alt=""><br><img src="https://img-blog.csdnimg.cn/20200313104806965.png" alt=""><br>然后git push origin master推到远端GitHub库即可</p>
-<p><img src="https://img-blog.csdnimg.cn/20200313105627529.png" alt=""></p>
 <hr>
-<p>PS：这时在终端用glog命令，让我明白了<code>HEAD -&gt; master, origin/master, origin/HEAD</code>这几句话的含义<br><img src="https://img-blog.csdnimg.cn/20200313105241102.png" alt=""></p>
-<h2 id="1-3-使用git-pull前必须先进行git-commit"><a href="#1-3-使用git-pull前必须先进行git-commit" class="headerlink" title="1.3 使用git pull前必须先进行git commit"></a>1.3 使用git pull前必须先进行git commit</h2><p>git pull是建立在你的修改已经加到git的历史世界线上的（commit形成一个结点）</p>
-<ul>
-<li><p>每次使用git pull命令前，需要将本地工作区编辑过的文件添加到暂存区（git add .），或提交到本地仓库中(git commit)，才可以使用该命令拉取指定分支的代码合并到当前分支中</p>
-</li>
-<li><p>每次在操作完git commit命令后，必须拉取一下master分支代码，保持本地正在开发功能逻辑的代码分支代码是最新的，避免后续在提交时冲突过多或覆盖掉其他人的代码的问题出现</p>
-</li>
-</ul>
-<h2 id="1-4-实例演示2"><a href="#1-4-实例演示2" class="headerlink" title="1.4 实例演示2"></a>1.4 实例演示2</h2><p>我在本地修改了local-test1.txt文件，但是还没有git commit，同时远端GitHub我也修改了local-test1.txt文件，此时git会报错<br><img src="https://img-blog.csdnimg.cn/20200313110451342.png" alt=""><br><strong>解决方法</strong>：把本地的所有修改用git commit添加到暂存区，然后再用git pull命令<br><img src="https://img-blog.csdnimg.cn/20200313111222290.png" alt=""><br>未合并冲突前，git记录可视化是这样的<br><img src="https://img-blog.csdnimg.cn/20200313111244175.png" alt=""><br>此时直接git push会报错：Updates were rejected because the tip of your current branch is behind its remote counterpart. Integrate the remote changes<br><img src="https://img-blog.csdnimg.cn/20200313111341261.png" alt=""><br>正确做法当然是先解决冲突(手动修复冲突文件)，然后git commit，最后再git push<br><img src="https://img-blog.csdnimg.cn/20200313111555670.png" alt=""></p>
-<h1 id="法二：git-clone"><a href="#法二：git-clone" class="headerlink" title="法二：git clone"></a>法二：git clone</h1><p> <code>git clone 仓库地址</code></p>
-<p>这时你进入clone的文件夹用git add, git commit, git push等命令就不会出现报错</p>
+<h1 id="matplotlib-inline"><a href="#matplotlib-inline" class="headerlink" title="%matplotlib inline"></a>%matplotlib inline</h1><p>开头加上如下代码可以显示图像，但无交互功能</p>
+<pre><code>%matplotlib inline</code></pre><div align=center><img src="https://img-blog.csdnimg.cn/20200316233957769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>
+
+<p>如果开头不加上面所说的代码，运行后也会形成一张干巴巴的图片，无法实现交互式功能</p>
+<div align=center><img src="https://img-blog.csdnimg.cn/2020031623271139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>
+# 一个细节：在每个单元格运行后，图表被重置
+使用jupyter notebook时有个细节需要注意，在每个单元格运行后，图表被重置，因此对于复杂的图标，你必须将所有的绘图命名放在单个的notebook单元格内
+<div align=center><img src="https://img-blog.csdnimg.cn/20200316234943598.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>
+
+
+<hr>
+<div align=center><img src="https://img-blog.csdnimg.cn/20200316234832859.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>
+
+
+<hr>
 
             </div>
             <hr/>
@@ -572,7 +570,7 @@ git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weisenhui.top/posts/14023.html">https://weisenhui.top/posts/14023.html</a>
+                    <a href="https://weisenhui.top/posts/56576.html">https://weisenhui.top/posts/56576.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -610,8 +608,8 @@ git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Git/">
-                                    <span class="chip bg-color">Git</span>
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
                                 </a>
                             
                         </div>
@@ -915,9 +913,10 @@ git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/posts/56576.html">
                     <div class="card-image">
@@ -938,9 +937,9 @@ git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -953,6 +952,7 @@ git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -971,19 +971,19 @@ git pull --rebase = git fetch &amp;&amp; git rebase</code></pre><p>这里我再�
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/102340.html">
+                <a href="/posts/14023.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Accelerate git clone speed">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="git pull && git clone">
                         
-                        <span class="card-title">Accelerate git clone speed</span>
+                        <span class="card-title">git pull && git clone</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提高GitHub git clone速度的方法（码云√ 代理√ hosts×）
+                            解决git push origin master时的报错
                         
                     </div>
                     <div class="publish-info">
