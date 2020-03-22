@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-03-22T04:45:28.472Z</updated>
+  <updated>2020-03-22T05:15:41.981Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://weisenhui.top/posts/8085.html"/>
     <id>https://weisenhui.top/posts/8085.html</id>
     <published>2020-03-22T04:39:13.000Z</published>
-    <updated>2020-03-22T04:45:28.472Z</updated>
+    <updated>2020-03-22T05:15:41.981Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,7 @@
       
         
         
-          &lt;p&gt;23&lt;/p&gt;
-
+          &lt;p&gt;Vim文本编辑的所有命令全部符合一个规律&lt;br&gt;即&lt;code&gt;[操作]+[行号]+[定位]&lt;/code&gt;，三个部分完成一个动作&lt;br&gt;例：删除2行代码就是&lt;code&gt;d2d&lt;/code&gt;
         
       
     
