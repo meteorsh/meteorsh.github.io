@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-03-22T04:24:59.095Z</updated>
+  <updated>2020-03-22T04:45:28.472Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>上古神器vim</title>
+    <link href="https://weisenhui.top/posts/8085.html"/>
+    <id>https://weisenhui.top/posts/8085.html</id>
+    <published>2020-03-22T04:39:13.000Z</published>
+    <updated>2020-03-22T04:45:28.472Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;23&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vim" scheme="https://weisenhui.top/categories/vim/"/>
+    
+    
+      <category term="vim" scheme="https://weisenhui.top/tags/vim/"/>
+    
+  </entry>
   
   <entry>
     <title>问题解决：安装的Python第三方库seaborn无法导入到jupyter notebook中</title>

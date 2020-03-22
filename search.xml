@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>上古神器vim</title>
+      <link href="/posts/8085.html"/>
+      <url>/posts/8085.html</url>
+      
+        <content type="html"><![CDATA[<p>23</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vim </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>问题解决：安装的Python第三方库seaborn无法导入到jupyter notebook中</title>
       <link href="/posts/29810.html"/>
       <url>/posts/29810.html</url>
