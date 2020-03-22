@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-03-17T01:53:28.310Z</updated>
+  <updated>2020-03-22T04:24:59.095Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>问题解决：安装的Python第三方库seaborn无法导入到jupyter notebook中</title>
+    <link href="https://weisenhui.top/posts/29810.html"/>
+    <id>https://weisenhui.top/posts/29810.html</id>
+    <published>2020-03-22T04:23:55.000Z</published>
+    <updated>2020-03-22T04:24:59.095Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt;&lt;br&gt;我在终端使用pip3 install seaborn库，但奇怪的是我打开jupyter notebook时，它还是说我没有导入成功，坑！！！&lt;/p&gt;
+&lt;div align=center&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="问题解决" scheme="https://weisenhui.top/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="问题解决" scheme="https://weisenhui.top/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub pull request具体过程</title>
+    <link href="https://weisenhui.top/posts/5326.html"/>
+    <id>https://weisenhui.top/posts/5326.html</id>
+    <published>2020-03-22T04:20:18.000Z</published>
+    <updated>2020-03-22T04:26:08.499Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pull-Request-简单明了的解释&quot;&gt;&lt;a href=&quot;#Pull-Request-简单明了的解释&quot; class=&quot;headerlink&quot; title=&quot;Pull Request 简单明了的解释&quot;&gt;&lt;/a&gt;Pull Request
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="https://weisenhui.top/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://weisenhui.top/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>jupter notebook %matplotlib</title>
@@ -78,7 +133,7 @@
     <link href="https://weisenhui.top/posts/102340.html"/>
     <id>https://weisenhui.top/posts/102340.html</id>
     <published>2020-03-12T16:00:00.000Z</published>
-    <updated>2020-03-14T06:39:14.692Z</updated>
+    <updated>2020-03-22T04:18:03.395Z</updated>
     
     <summary type="html">
     

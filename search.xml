@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>问题解决：安装的Python第三方库seaborn无法导入到jupyter notebook中</title>
+      <link href="/posts/29810.html"/>
+      <url>/posts/29810.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong><br>我在终端使用pip3 install seaborn库，但奇怪的是我打开jupyter notebook时，它还是说我没有导入成功，坑！！！</p><div align=center><img src="https://img-blog.csdnimg.cn/20200316144943972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p><strong>解决方法：</strong><br>在mac中打开访达进入下面文件夹</p><pre><code>/usr/local/share/jupyter/kernels/python3</code></pre><p>打开kernel.json，进行如下修改</p><p>修改前：</p><div align=center><img src="https://img-blog.csdnimg.cn/20200316145135549.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>修改后</p><p>将<code>python</code>修改成<code>/usr/local/bin/python3</code></p><div align=center><img src="https://img-blog.csdnimg.cn/2020031614525377.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>重启jupyter notebook，可以发现不会再报错了</p><div align=center><img src="https://img-blog.csdnimg.cn/20200316145424552.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>教训：<br>遇到报错，用Google去搜索，然后去GitHub里面的issues找答案，里面会有很多大佬帮你解决问题，而且回答质量非常高。事实证明解决问题看issues比看别人的中文二手博客要高效10倍</p><p>参考资料：</p><ul><li><a href="https://github.com/jupyter/notebook/issues/2359" target="_blank" rel="noopener">Installed package won’t import in notebook #2359</a></li></ul><div align=center><img src="https://img-blog.csdnimg.cn/20200316145734712.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 问题解决 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题解决 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GitHub pull request具体过程</title>
+      <link href="/posts/5326.html"/>
+      <url>/posts/5326.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Pull-Request-简单明了的解释"><a href="#Pull-Request-简单明了的解释" class="headerlink" title="Pull Request 简单明了的解释"></a>Pull Request 简单明了的解释</h1><p>“有一个仓库，叫Repo A。你如果要往里贡献代码，首先要Fork这个Repo，于是在你的Github账号下有了一个Repo A2,。然后你在这个A2下工作，Commit，push等。然后你希望原始仓库Repo A合并你的工作，你可以在Github上发起一个Pull Request，意思是请求Repo A的所有者从你的A2合并分支。如果被审核通过并正式合并，这样你就为项目A做贡献了”——摘自知乎某匿名用户 <a href="https://www.zhihu.com/question/21682976/answer/20835845" target="_blank" rel="noopener">链接</a></p><h1 id="Pull-Request的具体过程详解"><a href="#Pull-Request的具体过程详解" class="headerlink" title="Pull Request的具体过程详解"></a>Pull Request的具体过程详解</h1><p>Pull Request的仓库地址<br><a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener">https://github.com/timqian/chinese-independent-blogs</a></p><p>（1）fork你需要pull request的仓库到你自己的账号中</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313002741823.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>（2）git clone这个仓库到你的机器</p><div align=center><img src="https://img-blog.csdnimg.cn/2020031300310156.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><div align=center><img src="https://img-blog.csdnimg.cn/20200313003136118.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>（3）根据原仓库pull request的具体要求进行文件修改</p><p>PR要求示例：</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313085946107.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_cGhvdG8gYnkgc2h3ZWk=,size_25,color_FFFFFF,t_50,g_center" width="60%"/></div><p>（有些仓库作者让你切换分支，有些不需要）</p><p>本文我所要pull request的要求如下：</p><pre><code>如何提交- 在 ./blogs-original.csv 中填入博客 URL, RSS 及简介- 提交 PR- PR 被 merge 之后 README 通过 ./script.js 生成</code></pre><div align=center><img src="https://img-blog.csdnimg.cn/20200313002543471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>（4）把修改提交到你克隆下来的仓库中</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313003832294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><div align=center><img src="https://img-blog.csdnimg.cn/20200313003942581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>（5）在你克隆下来的仓库中，点击New pull request</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313004357642.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>自动跳转到原仓库，进行Comparing changes</p><div align=center><img src="https://img-blog.csdnimg.cn/2020031300465444.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>选择compare的分支</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313004814496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>点击Create pull request</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313004841164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>（6）最后等着原作者来merge你的pull request即可</p><div align=center><img src="https://img-blog.csdnimg.cn/20200313004859621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><div align=center><img src="https://img-blog.csdnimg.cn/20200313010015930.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><div align=center><img src="https://img-blog.csdnimg.cn/20200313085427832.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><div align=center><img src="https://img-blog.csdnimg.cn/20200313085616239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_40,text_ICBAU0hXRUkgIA==,size_25,color_FFFFFF,t_50,g_nw" width="77%"/></div><p>参考文档：<br><a href="https://www.zhihu.com/question/21682976/answer/79489643" target="_blank" rel="noopener">GitHub 的 Pull Request 是指什么意思？</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jupter notebook %matplotlib</title>
       <link href="/posts/56576.html"/>
       <url>/posts/56576.html</url>
