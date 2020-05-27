@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weisenhui.top/"/>
-  <updated>2020-05-08T12:48:14.095Z</updated>
+  <updated>2020-05-27T05:36:38.283Z</updated>
   <id>https://weisenhui.top/</id>
   
   <author>
@@ -17,39 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>卡特兰数专题</title>
-    <link href="https://weisenhui.top/posts/49535.html"/>
-    <id>https://weisenhui.top/posts/49535.html</id>
-    <published>2020-05-08T12:40:58.000Z</published>
-    <updated>2020-05-08T12:48:14.095Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;2018.09 大三上 &lt;a href=&quot;https://weisenhui.top/file/combinatorics.pdf&quot;&gt;组合数学课堂讲义&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;卡特兰数定义&quot;&gt;&lt;a href=&quot;#卡特兰数定义&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Math" scheme="https://weisenhui.top/categories/Math/"/>
-    
-    
-      <category term="Math" scheme="https://weisenhui.top/tags/Math/"/>
-    
-  </entry>
-  
-  <entry>
     <title>毕业季的一点思考</title>
     <link href="https://weisenhui.top/posts/32615.html"/>
     <id>https://weisenhui.top/posts/32615.html</id>
     <published>2020-04-25T14:45:39.000Z</published>
-    <updated>2020-05-16T00:11:48.860Z</updated>
+    <updated>2020-05-27T05:36:38.283Z</updated>
     
     <summary type="html">
     
@@ -72,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>Installed package won&#39;t import in notebook</title>
-    <link href="https://weisenhui.top/posts/29810.html"/>
-    <id>https://weisenhui.top/posts/29810.html</id>
-    <published>2020-03-22T04:23:55.000Z</published>
-    <updated>2020-04-03T07:04:00.275Z</updated>
+    <title>数学系转计算机的心路历程</title>
+    <link href="https://weisenhui.top/posts/49535.html"/>
+    <id>https://weisenhui.top/posts/49535.html</id>
+    <published>2020-02-08T12:40:58.000Z</published>
+    <updated>2020-05-27T05:36:03.311Z</updated>
     
     <summary type="html">
     
@@ -84,44 +56,17 @@
       
         
         
-          &lt;h1 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h1&gt;&lt;p&gt;我在终端使用pip3 install seaborn库，但奇怪的是我打开jupyter
+          &lt;p&gt;2019年2月决定从数学转计算机，尽管一开始毫无基础，困难重重，但是我相信自己的学习能力。明天就是2020年2月了，整整一年过去了。我感觉这一年里的每天都是充满压力和挑战的，但是不知道为什么我总是很乐意去学编程，即使花很多时间只明白了一个知识点，也许是因为数学专业课太无聊了
         
       
     
     </summary>
     
     
-      <category term="问题解决" scheme="https://weisenhui.top/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <category term="随笔" scheme="https://weisenhui.top/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="问题解决" scheme="https://weisenhui.top/tags/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode 236.二叉树的最近公共祖先</title>
-    <link href="https://weisenhui.top/posts/1234.html"/>
-    <id>https://weisenhui.top/posts/1234.html</id>
-    <published>2020-02-14T14:00:00.000Z</published>
-    <updated>2020-04-03T07:29:36.189Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;题目描述（中等难度）&quot;&gt;&lt;a href=&quot;#题目描述（中等难度）&quot; class=&quot;headerlink&quot; title=&quot;题目描述（中等难度）&quot;&gt;&lt;/a&gt;题目描述（中等难度）&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="LeetCode" scheme="https://weisenhui.top/categories/LeetCode/"/>
-    
-    
-      <category term="LeetCode" scheme="https://weisenhui.top/tags/LeetCode/"/>
+      <category term="随笔" scheme="https://weisenhui.top/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
